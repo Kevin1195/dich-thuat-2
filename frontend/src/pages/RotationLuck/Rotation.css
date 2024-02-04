@@ -1,0 +1,63 @@
+.luck-rotation img {
+    height: 100vh;
+}
+
+.luck-rotation {
+    position: relative;
+    padding-bottom: -20px;
+}
+
+.style-luky {
+    position: absolute;
+    top: 20%;
+    left: -27%;
+}
+
+.title-lucky {
+    max-width: 527px;
+}
+
+.title-lucky img {
+    width: 20px;
+    height: 20px;
+}
+/* 
+.go-to-home {
+    flex: 2;
+}
+
+.title-vong-quay {
+    flex: 10;
+} */
+
+.title-lucky {
+    display: flex;
+    align-items: center;
+}
+
+.title-vong-quay {
+    flex-grow: 1;
+    text-align: center;
+    margin-left: -70px;
+}
+
+.go-to-home {
+    padding: 0 20px 0 20px;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 389px) {
+    .style-luky {
+        position: absolute;
+        top: 20%;
+        left: -30%;
+    }
+}
+
+@media only screen and (min-width: 410px) {
+    .style-luky {
+        position: absolute;
+        top: 20%;
+        left: -25%;
+    }
+}

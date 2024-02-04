@@ -1,0 +1,323 @@
+:root {
+    --primary-color: #0c131d;
+    --secondary-color: #5f9cff;
+    --third-color: #ffffff;
+    --primary-text: rgb(0, 0, 0);
+    --secondary-text: #ffffff;
+}
+
+div {
+    color: var(--primary-text);
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    position: relative;
+    // height: 50vh;
+}
+.account-header {
+    margin: -15px;
+    background: linear-gradient(147deg, rgb(113, 183, 255), rgb(23, 131, 252) 74%);
+    line-height: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 130px;
+    margin-bottom: 70px;
+}
+.account-username {
+    color: var(--secondary-text);
+}
+.account-level {
+    color: white;
+    font-weight: 700;
+}
+.account-id {
+    color: var(--secondary-text);
+    display: flex;
+}
+
+.accout-id-number {
+    padding-left: 4px;
+    color: white;
+    margin-bottom: 0 !important;
+}
+
+.session {
+    margin-top: 12px;
+    border-radius: 3px;
+    background-color: var(--third-color);
+}
+.session-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    // padding: 4px;
+    padding: 8px;
+    margin: 0 4px;
+    line-height: 32px;
+
+    + .session-item {
+        border-top: 1px solid rgb(219, 219, 219);
+    }
+}
+
+.session-item:hover {
+    background-color: #e0e0e0;
+    border-radius: 15px;
+}
+
+.session-icon-item {
+    width: 22px;
+    height: 22px;
+}
+.session-desc {
+    padding-left: 16px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.account-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease;
+    background-image: linear-gradient(147deg, rgb(113, 183, 255), rgb(23, 131, 252) 74%);
+    border-radius: 15px;
+    line-height: 30px;
+    width: 100%;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+.account-footer:hover {
+    background-position: -100% 0;
+}
+
+.footer-icon {
+    width: 16px;
+    height: 16px;
+    color: red;
+}
+.footer-desc {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding-left: 6px;
+}
+
+.bank-header {
+    font-size: 20px;
+    color: rgb(48, 138, 255);
+}
+
+.bank-title {
+    position: relative;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+
+    &::before {
+        color: #ff4d4f;
+        content: "*";
+        display: inline-block;
+        font-family: SimSun, sans-serif;
+        font-size: 14px;
+        line-height: 1;
+        margin-right: 4px;
+    }
+}
+.border-my-info {
+    border: 2px solid #ff3c61 !important;
+    color: var();
+}
+
+.edit-password {
+    height: 80vh;
+    .form-group {
+        padding-top: 16px;
+        position: relative;
+
+        input::placeholder {
+            color: white;
+        }
+    }
+
+    input {
+        font-size: 16px;
+        outline: none;
+        border-radius: 5px;
+        padding: 10px 5px;
+        padding-left: 12px;
+        background-color: #fff;
+        color: #000;
+    }
+
+    input:focus {
+        border: 2px solid #00ff0d;
+    }
+
+    .btn-submit {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #2f3848;
+    }
+    .select-banking {
+        width: 100%;
+        border: 2px solid #999;
+        color: black;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 10px 5px;
+        padding-left: 12px;
+        line-height: 30px;
+        margin-bottom: 16px;
+    }
+    .select-banking:hover,
+    .select-banking:active,
+    .select-banking:focus {
+        border: 2px solid #3d92d7;
+    }
+}
+
+.edit-password.edit-password-style {
+    height: 80vh;
+    .form-group {
+        padding-top: 16px;
+        position: relative;
+
+        input::placeholder {
+            color: rgb(56, 56, 56) !important;
+        }
+    }
+}
+
+.bank-alert {
+    color: red;
+    font-size: 14px;
+}
+
+.guide {
+    padding: 16px;
+    .guide-header {
+    }
+    .guild-header-title {
+        color: white;
+        font-size: 20px;
+    }
+    .avatar {
+        width: 70px;
+        height: 70px;
+        margin-top: 16px;
+
+        .icon-avatar {
+            border-radius: 5px;
+        }
+    }
+
+    .header-content {
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-content-title {
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .header-content-sub-title {
+        font-size: 14px;
+        color: grey;
+    }
+    .session-header {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+    .session-header-item {
+        padding: 4px;
+    }
+    .session-header-icon {
+        display: flex;
+        justify-content: center;
+    }
+    .session-header-svg {
+        width: 38px;
+        height: 38px;
+        color: white;
+    }
+    .session-header-desc {
+        color: white;
+    }
+
+    .guild-header-sub-title {
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .session {
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .session-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .session-item-header {
+        width: 100%;
+        border-bottom: 2px solid #cccccc;
+    }
+    .session-item-header-level {
+        display: flex;
+        justify-content: space-between;
+    }
+    .session-item-header-name-level {
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+    }
+
+    .session-item-header-error {
+        color: red;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .session-item-header-price {
+        color: #52c41a;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .session-item-header-sub-title {
+        color: green;
+        font-weight: 700;
+    }
+
+    .session-item-button {
+        color: black;
+        border-radius: 5px;
+        background-color: #feffff;
+        padding: 1px 12px;
+    }
+    .session-content {
+        margin-top: 16px;
+    }
+    .session-item-desc {
+        color: white;
+        font-weight: 500;
+    }
+}
+
+.members {
+    p {
+        font-size: 16px !important;
+    }
+}

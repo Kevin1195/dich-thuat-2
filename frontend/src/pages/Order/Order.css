@@ -1,0 +1,250 @@
+.sc-hUpaCq.fvrbNa img {
+    height: 190px;
+    width: 360px;
+}
+
+.search-order {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0px;
+}
+
+.sc-lcepkR.hJmUWK {
+    width: 100%;
+    background: linear-gradient(147deg, rgb(79, 224, 75), rgb(0, 114, 19) 74%);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--primary-title);
+}
+
+.ant-btn-primary {
+    background: #1890ff;
+    border-color: #1890ff;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+}
+
+.ant-btn-lg {
+    border-radius: 2px;
+    font-size: 16px;
+    height: 40px;
+    padding: 6.4px 15px;
+}
+
+.ant-row.ant-row-space-between {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ant-row.ant-row-space-between .ant-col {
+    display: block;
+    flex: 0 0 50%;
+    max-width: 176px;
+}
+
+.money-trade {
+    background: linear-gradient(147deg, rgb(113, 183, 255), rgb(23, 131, 252) 74%);
+    font-size: 18px;
+    color: yellow;
+    font-weight: 600;
+    padding: 8px 0px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 24px 0px 12px;
+}
+
+.kHnHbZ {
+    margin-top: 1rem;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.sc-ikJyIC.gNkWet {
+    width: 176px;
+}
+
+.sc-lcepkR.hJmUWK {
+    position: relative;
+}
+
+.progress-bar {
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 10px;
+    max-width: 360px;
+    background-color: #fff;
+    background: linear-gradient(147deg, rgb(113, 183, 255), rgb(23, 131, 252) 74%);
+    animation: progress 3s linear;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 25%;
+    }
+    50% {
+        width: 50%;
+    }
+    75% {
+        width: 75%;
+    }
+    100% {
+        width: 100%;
+        background-color: #000;
+    }
+}
+
+.progress-bar-text {
+    position: absolute;
+    top: 42px;
+    right: 0;
+    font-size: 10px;
+    color: #d1d1d1;
+}
+
+.img-level-order {
+    top: -20px;
+    left: 25px;
+}
+
+.huong-dan {
+    background: linear-gradient(209deg, #ffcc2c, #ff9a2c);
+    position: absolute;
+    top: -15px;
+    left: 15px;
+}
+
+/* .matching-animation {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+} */
+
+.loader {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+.overlay {
+    z-index: 999;
+    position: fixed; /* cố định phần tử trên màn hình */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* màu nền đen mờ */
+}
+
+.text {
+    position: absolute; /* vị trí tuyệt đối so với phần tử cha */
+    top: 46.5%; /* căn giữa theo chiều dọc */
+    left: 30%; /* căn giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* dịch chuyển đến vị trí căn giữa */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.textConfirm {
+    position: absolute; /* vị trí tuyệt đối so với phần tử cha */
+    top: 46.5%; /* căn giữa theo chiều dọc */
+    left: 30%; /* căn giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* dịch chuyển đến vị trí căn giữa */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loaderConfirm1 {
+    position: absolute;
+    top: 45.5%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    animation: loaderAnim1 2s infinite ease-in-out;
+}
+
+.loaderConfirm2 {
+    position: absolute;
+    top: 45.5%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    animation: loaderAnim1 2s infinite ease-in-out;
+}
+
+.loaderConfirm3 {
+    position: absolute;
+    top: 45.5%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    animation: loaderAnim1 2s infinite ease-in-out;
+}
+
+.loader1 {
+    position: absolute;
+    top: 45.5%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    animation: loaderAnim1 2s infinite ease-in-out;
+}
+
+.loader2 {
+    position: absolute;
+    top: 45.5%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    animation: loaderAnim2 2s infinite ease-in-out;
+}
+
+.loader3 {
+    position: absolute;
+    top: 45.5%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    animation: loaderAnim3 2s infinite ease-in-out;
+}
+
+@keyframes loaderAnim1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes loaderAnim2 {
+    0% {
+        transform: scale(0.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes loaderAnim3 {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.confirm-order {
+    position: absolute;
+    width: 390px !important;
+    margin-left: -15px !important;
+    height: 28rem;
+    background: linear-gradient(1turn, #fff, #bac3d2);
+}

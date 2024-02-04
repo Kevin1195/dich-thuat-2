@@ -1,0 +1,244 @@
+#acccount {
+    position: relative;
+}
+
+.select-language select {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    font-size: 16px;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.container {
+    background-color: #1e1e1e;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    width: 500px !important;
+    // display: flex;
+}
+
+.side-content {
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    label {
+        margin-top: 50px;
+    }
+}
+
+.banner-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 41.2px;
+    color: rgb(77, 77, 77);
+    text-align: center;
+    margin: 20px 0;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    position: relative;
+
+    .icon-left {
+        width: 20px;
+        position: absolute;
+        top: 12px;
+        left: 15px;
+    }
+
+    .icon-right {
+        width: 25px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .name-input {
+        font-size: 14px;
+        color: rgb(129, 137, 150);
+        &:before {
+            color: #ff4d4f;
+            content: '*';
+            display: inline-block;
+            font-family: SimSun, sans-serif;
+            font-size: 14px;
+            line-height: 1;
+            margin-right: 4px;
+        }
+    }
+
+    .form-input {
+        color: rgb(0, 0, 0) !important;
+        border-radius: 25px;
+        background-color: #ffffff !important;
+        font-size: 16px;
+        padding: 6.5px 50px;
+        line-height: 3.2rem;
+        border: 1px solid rgb(163, 163, 163);
+
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+}
+.btn-submit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.block-events {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: #f6d06a;
+    border-radius: 6px;
+    border: none;
+    flex-grow: 1;
+    padding: 4px 15px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.divider {
+    text-align: center;
+    margin: 16px 0;
+    display: block;
+
+    .divider-text {
+        font-size: 14px;
+        color: rgb(129, 137, 150);
+        z-index: 12;
+        background-color: red;
+        width: 50px;
+        height: 50px;
+    }
+
+    &:before {
+        display: block;
+        border-bottom: 0;
+        border-top: 1px solid transparent;
+        border-top-color: inherit;
+        content: '';
+        position: relative;
+        top: 50%;
+        transform: translateY(50%);
+        width: 100%;
+        z-index: 0;
+    }
+
+    // &:after {
+    //     display: block;
+    //     position: relative;
+    //     border-bottom: 0;
+    //     border-top: 1px solid transparent;
+    //     border-top-color: inherit;
+    //     content: '';
+    //     top: 50%;
+    //     left: 0;
+    //     transform: translateY(50%);
+    //     width: 45%;
+    // }
+}
+
+.btn-register {
+    display: flex;
+    justify-content: center;
+    margin: 4px 0;
+    text-align: center;
+}
+
+.register {
+    color: white;
+    font-size: 14px;
+    background-color: #2a313c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    flex-grow: 1;
+    padding: 4px 15px;
+    height: 45px;
+    font-weight: 700;
+
+    &:hover {
+        background-color: #45aafc;
+        border: none;
+    }
+}
+
+.desc {
+    cursor: pointer;
+    color: yellow;
+}
+
+.term {
+    display: flex;
+    flex-direction: row;
+}
+
+.check-box {
+}
+
+.check-box-term {
+    transform: scale(1.5);
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 7px;
+    margin-left: 2px;
+}
+
+.desc-term {
+    cursor: pointer;
+    padding-left: 12px;
+    font-size: 14px;
+    color: rgb(129, 137, 150);
+    user-select: none;
+    margin-bottom: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.desc-footer {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8c8c8c;
+    line-height: 1.6rem;
+}
+
+.login-btn {
+    color: #e1ba3c;
+    font-size: 16px;
+    padding-left: 4px;
+    line-height: 1.6rem;
+}

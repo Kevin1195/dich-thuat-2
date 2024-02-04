@@ -1,0 +1,75 @@
+.header-style {
+    height: 64px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 360px;
+}
+
+.ant-avatar {
+    font-feature-settings: 'tnum', 'tnum';
+    background: #ccc;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    height: 36px;
+    line-height: 1.5715;
+    line-height: 36px;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 36px;
+}
+
+.header-style-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-user {
+    display: flex;
+    flex: 1 1 0%;
+    align-items: center;
+    gap: 8px;
+    background-color: rgb(42, 49, 60);
+    padding: 0 20px;
+    border-radius: 20px;
+    height: 36px;
+    width: 150px;
+    margin-left: 10px;
+}
+
+.info-user svg,
+.info-user-detail {
+    color: white;
+}
+
+.info-user svg {
+    font-size: 22px;
+}
+
+.info-user .info-user-detail {
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+
+.image-logo-header {
+    width: 150px;
+    margin-right: -14px;
+}
+
+.info-user-detail > .name_user {
+    color: rgb(128, 125, 125) !important;
+}

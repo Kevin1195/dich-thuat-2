@@ -1,0 +1,19 @@
+.pagination {
+    display: flex;
+    margin-top: 10px;
+    user-select: none;
+    li {
+        border-radius: 5px;
+        color: #000;
+    }
+    li a {
+        margin: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    li.selected a {
+        background: #0f77ec;
+        color: #fff;
+    }
+}

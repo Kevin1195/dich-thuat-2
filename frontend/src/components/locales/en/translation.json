@@ -1,0 +1,24 @@
+{
+    "content": {
+        "login": {
+            "dangNhap": "Login",
+            "dangKy": "Register",
+            "thieuThongTin": "Vui lòng nhập đầy đủ thông tin",
+            "saiDinhDang": "Tài khoản không đúng định dạng!"
+        },
+        "register": {
+            "luuY": "Lưu ý: Nhập đúng họ và tên thật để liên kết tài khoản ngân hàng và rút tiền",
+            "inputName": "Vui lòng nhập họ và tên thật",
+            "inputPhone": "Vui lòng nhập số điện thoại",
+            "inputPw": "Vui lòng nhập mật khẩu",
+            "inputPw1": "Vui lòng nhập mật khẩu vốn",
+            "inputCode": "Vui lòng nhập mã mời",
+            "toiDongY": "Tôi đã đọc và đồng ý với thoả thuận mở tài khoản của HACO"
+        },
+        "notFound": {
+            "title": "Error 404!",
+            "message": "The requested URL was not found on this server."
+        },
+        "error": "Có lỗi xảy ra!"
+    }
+}

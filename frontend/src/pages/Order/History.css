@@ -1,0 +1,223 @@
+.item-data.relative {
+    background-color: #f2e6ff;
+    background-image: linear-gradient(to bottom right, #595f7d, #2e3255);
+    border-radius: 5px;
+}
+
+.by.flex img {
+    border-radius: 50%;
+}
+
+.nav-tabs {
+    height: 40px;
+    font-size: 14px;
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+.nav-item {
+    cursor: pointer;
+    position: relative;
+}
+
+.nav .nav-item a:hover {
+    background-color: #006997;
+    color: white;
+}
+
+.nav-item > .nav-link.active {
+    background-color: #006997 !important;
+    color: white !important;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+}
+
+.nav-item > .nav-link.active::before {
+    content: '';
+    position: absolute;
+    /* border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 6px solid #006997; 
+    top: 34px;
+    right: 35px;
+    left: 50%; 
+    transform: translateX(-50%);*/
+    border: 12px solid;
+    border-color: #006997 transparent transparent transparent;
+    top: 30px;
+    right: 38px;
+}
+
+.history-body {
+    margin: 2rem 0rem 2rem 0rem;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* .nav-link.active::before {
+    content: '';
+    border: 15px solid #006997;
+    border-color: #006997 transparent transparent transparent;
+    position: relative;
+    left: 30px;
+    top: 44px;
+    z-index: -1;
+} */
+
+.nav-tabs {
+    border-bottom: none !important;
+}
+
+.nav-item {
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.yt-history-list {
+    padding-top: 2rem;
+}
+
+.yt-history-list .item {
+    padding-bottom: 15px;
+}
+
+.yt-history-list .item .item-content {
+    background: #fff;
+    padding: 0;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px 2px rgb(0 0 0 / 10%);
+    padding: 20px;
+    color: #000;
+    font-size: 14px;
+}
+
+.yt-history-list .item .item-content .info table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.item-content .status.processing {
+    color: #006997;
+}
+
+.item-content .status.pending {
+    color: #006997;
+}
+
+.item-content .status.done {
+    color: rgb(5, 221, 5);
+}
+
+.item .item-content .status {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+}
+
+.item-content .time-wrap {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+}
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-description {
+    margin-top: 1rem;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+
+/* CSS History Recharge and Withdraw */
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.table .thead-light th {
+    color: #495057;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.modal-body .badge {
+    font-size: 14px;
+}
+
+.badge {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
+
+.badge-fail,
+.withdraw-success {
+    color: #fff;
+    background-color: #ee2828;
+}
+
+.badge-pending {
+    color: black !important;
+    background-color: #eef133;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}
+
+.tab-pane {
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+th,
+tr {
+    font-size: 14px;
+}
