@@ -45,7 +45,7 @@ import DetailChat from '../pages/My/DetailChat';
 
 // Public Router
 
-let defaultTitle = 'Dịch thuật Unionsquare';
+let defaultTitle = 'Dịch thuật Công ty dịch thuật A2Z';
 
 const publicRoutes = [
     // Trang chủ

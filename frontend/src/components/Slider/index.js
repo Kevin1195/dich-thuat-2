@@ -7,11 +7,12 @@ import { useEffect, useState } from 'react';
 import banner1 from '../../assets/images/BANNER 1.png';
 import banner2 from '../../assets/images/BANNER 2.png';
 import banner3 from '../../assets/images/BANNER 3.png';
+import banner4 from '../../assets/images/BANNER 1.jpg';
 
 const axios = require('axios').default;
 
 function Slider() {
-    let [banners, setBanners] = useState([banner1, banner2, banner3]);
+    let [banners, setBanners] = useState([banner4, banner1, banner2, banner3]);
     // useEffect(() => {
     //     axios
     //         .get(`${SETTINGS.BASE_URL}/api/webapi/list/banners`, {

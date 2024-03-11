@@ -23,12 +23,12 @@ import skechers from '../../assets/images/new/4.SKECHERS.jpeg';
 import columbia from '../../assets/images/new/5.COLUMBIA.jpeg';
 import dyson from '../../assets/images/new/6.DYSON.jpg';
 
-import lining from '../../assets/images/new/1. LI-NING.png';
-import maxxsport from '../../assets/images/new/2. MAXX SPORT.png';
-import nike from '../../assets/images/new/3. NIKE.png';
-import adidas from '../../assets/images/new/4. ADIDAS.png';
-import asics from '../../assets/images/new/5. ASICS.png';
-import i361 from '../../assets/images/new/6. 361°.png';
+import congchung from '../../assets/images/new/congchung.jpg';
+import locknlocklv2 from '../../assets/images/new/LOCKNLOCKLV2.jpg';
+import shiseido from '../../assets/images/new/SHISEIDO.jpg';
+import thebodyshop from '../../assets/images/new/TheBodyShop.jpg';
+import doji from '../../assets/images/new/DOJI.jpg';
+import locknlocklv6 from '../../assets/images/new/LocknLocklv6.jpg';
 
 import khoa from '../../assets/images/khoa.png';
 import vechungta from '../../assets/images/vechungta.png';
@@ -91,43 +91,43 @@ function Home(args) {
     const { t } = useTranslation();
     const [listMission, setListMission] = useState([
         {
-            title: 'LI-NING',
-            icon: lining,
+            title: 'CÔNG CHỨNG',
+            icon: congchung,
             rose: 20,
             content: 1,
             status: 0,
         },
         {
-            title: 'MAXX SPORT',
-            icon: maxxsport,
+            title: 'LOCKNLOCK',
+            icon: locknlocklv2,
             rose: 25,
             content: 3,
             status: 0,
         },
         {
-            title: 'NIKE',
-            icon: nike,
+            title: 'SHISEIDO',
+            icon: shiseido,
             rose: 30,
             content: 5,
             status: 0,
         },
         {
-            title: 'ADIDAS',
-            icon: adidas,
+            title: 'THE BODY SHOP',
+            icon: thebodyshop,
             rose: 35,
             content: 7,
             status: 0,
         },
         {
-            title: 'ASICS',
-            icon: asics,
+            title: 'DOJI',
+            icon: doji,
             rose: 30,
             content: 8,
             status: 0,
         },
         {
-            title: '361',
-            icon: i361,
+            title: 'LOCK&LOCK',
+            icon: locknlocklv6,
             rose: 30,
             content: 10,
             status: 0,
@@ -238,44 +238,46 @@ function Home(args) {
                     const updateStatus = (name_level) => {
                         let updatedList = [];
                         switch (name_level) {
-                            case 'LI-NING':
+                            case 'CONG CHUNG':
                                 updatedList = listMission.map((mission) =>
                                     mission.title === name_level
                                         ? { ...mission, status: 1 }
                                         : { ...mission, status: 0 },
                                 );
                                 break;
-                            case 'MAXX SPORT':
+                            case 'LOCKNLOCK':
                                 updatedList = listMission.map((mission) =>
-                                    ['LI-NING', 'MAXX SPORT'].includes(mission.title)
+                                    ['CONG CHUNG', 'LOCKNLOCK'].includes(mission.title)
                                         ? { ...mission, status: 1 }
                                         : { ...mission, status: 0 },
                                 );
                                 break;
-                            case 'NIKE':
+                            case 'SHISEIDO':
                                 updatedList = listMission.map((mission) =>
-                                    ['LI-NING', 'MAXX SPORT', 'NIKE'].includes(mission.title)
+                                    ['CONG CHUNG', 'LOCKNLOCK', 'SHISEIDO'].includes(mission.title)
                                         ? { ...mission, status: 1 }
                                         : { ...mission, status: 0 },
                                 );
                                 break;
-                            case 'ADIDAS':
+                            case 'THE BODY SHOP':
                                 // updatedList = listMission.map((mission) => ({ ...mission, status: 1 }));
                                 updatedList = listMission.map((mission) =>
-                                    ['LI-NING', 'MAXX SPORT', 'NIKE', 'ADIDAS'].includes(mission.title)
+                                    ['CONG CHUNG', 'LOCKNLOCK', 'SHISEIDO', 'THE BODY SHOP'].includes(mission.title)
                                         ? { ...mission, status: 1 }
                                         : { ...mission, status: 0 },
                                 );
                                 break;
-                            case 'ASICS':
+                            case 'DOJI':
                                 // updatedList = listMission.map((mission) => ({ ...mission, status: 1 }));
                                 updatedList = listMission.map((mission) =>
-                                    ['LI-NING', 'MAXX SPORT', 'SHISEIDO', 'ADIDAS', 'ASICS'].includes(mission.title)
+                                    ['CONG CHUNG', 'LOCKNLOCK', 'SHISEIDO', 'THE BODY SHOP', 'DOJI'].includes(
+                                        mission.title,
+                                    )
                                         ? { ...mission, status: 1 }
                                         : { ...mission, status: 0 },
                                 );
                                 break;
-                            case '361':
+                            case 'LOCK&LOCK':
                                 updatedList = listMission.map((mission) => ({ ...mission, status: 1 }));
                                 break;
                             default:
@@ -349,7 +351,7 @@ function Home(args) {
                 </Link>
             </div>
 
-            <h2 className="text-3xl mt-16 text-black font-bold">Cửa hàng đối tác</h2>
+            <h2 className="text-3xl mt-16 text-black font-bold">Hệ thống đối tác</h2>
             <div className="goodcats">
                 {listMission.map((item, i) => {
                     return (
