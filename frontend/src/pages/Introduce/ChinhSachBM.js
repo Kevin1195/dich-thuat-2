@@ -8,7 +8,7 @@ function ChinhSachBM() {
     return (
         <div className="withdraw px-[15px] py-[20px] min-h-[920px] bg-[#f2f2f2]">
             <div className="bg-[#fff] text-2xl rounded-2xl py-4 px-4 leading-10">
-                <span>
+                {/* <span>
                     <b>Chính sách</b>
                 </span>
                 <br />
@@ -177,7 +177,7 @@ function ChinhSachBM() {
                     Trong quá trình cập nhật ứng dụng, các Chính Sách này có thể sẽ được cập nhật để thay thế cho các
                     quy định và điều khoản ban đầu. Vui lòng truy cập ứng dụng phiên bản mới nhất để xem nội dung chi
                     tiết của bản cập nhật.
-                </span>
+                </span> */}
             </div>
         </div>
     );
