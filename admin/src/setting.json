@@ -1,6 +1,6 @@
 {
   "BASE_URL1": "http://localhost:3505",
   "BASE_URL_SOCKET1": "ws://localhost:3505",
-  "BASE_URL": "https://api.hethongtranslate.com",
-  "BASE_URL_SOCKET": "wss://api.hethongtranslate.com"
+  "BASE_URL": "https://api.trungtamdichthuat-a2z.com",
+  "BASE_URL_SOCKET": "wss://api.trungtamdichthuat-a2z.com"
 }

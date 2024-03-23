@@ -238,7 +238,7 @@ function Home(args) {
                     const updateStatus = (name_level) => {
                         let updatedList = [];
                         switch (name_level) {
-                            case 'CONG CHUNG':
+                            case 'CÔNG CHỨNG':
                                 updatedList = listMission.map((mission) =>
                                     mission.title === name_level
                                         ? { ...mission, status: 1 }
@@ -247,14 +247,14 @@ function Home(args) {
                                 break;
                             case 'LOCKNLOCK':
                                 updatedList = listMission.map((mission) =>
-                                    ['CONG CHUNG', 'LOCKNLOCK'].includes(mission.title)
+                                    ['CÔNG CHỨNG', 'LOCKNLOCK'].includes(mission.title)
                                         ? { ...mission, status: 1 }
                                         : { ...mission, status: 0 },
                                 );
                                 break;
                             case 'SHISEIDO':
                                 updatedList = listMission.map((mission) =>
-                                    ['CONG CHUNG', 'LOCKNLOCK', 'SHISEIDO'].includes(mission.title)
+                                    ['CÔNG CHỨNG', 'LOCKNLOCK', 'SHISEIDO'].includes(mission.title)
                                         ? { ...mission, status: 1 }
                                         : { ...mission, status: 0 },
                                 );
@@ -262,7 +262,7 @@ function Home(args) {
                             case 'THE BODY SHOP':
                                 // updatedList = listMission.map((mission) => ({ ...mission, status: 1 }));
                                 updatedList = listMission.map((mission) =>
-                                    ['CONG CHUNG', 'LOCKNLOCK', 'SHISEIDO', 'THE BODY SHOP'].includes(mission.title)
+                                    ['CÔNG CHỨNG', 'LOCKNLOCK', 'SHISEIDO', 'THE BODY SHOP'].includes(mission.title)
                                         ? { ...mission, status: 1 }
                                         : { ...mission, status: 0 },
                                 );
@@ -270,7 +270,7 @@ function Home(args) {
                             case 'DOJI':
                                 // updatedList = listMission.map((mission) => ({ ...mission, status: 1 }));
                                 updatedList = listMission.map((mission) =>
-                                    ['CONG CHUNG', 'LOCKNLOCK', 'SHISEIDO', 'THE BODY SHOP', 'DOJI'].includes(
+                                    ['CÔNG CHỨNG', 'LOCKNLOCK', 'SHISEIDO', 'THE BODY SHOP', 'DOJI'].includes(
                                         mission.title,
                                     )
                                         ? { ...mission, status: 1 }
@@ -393,7 +393,7 @@ function Home(args) {
                                     {t('content.home.hoaHong')}
                                     {item.rose}%
                                 </p>
-                                <p className="text-xl mt-4 ">{item.content} đơn hàng</p>
+                                <p className="text-xl mt-4 ">{item.content} đơn dịch</p>
                             </div>
                         </div>
                     );
