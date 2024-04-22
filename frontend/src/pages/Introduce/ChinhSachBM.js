@@ -18,12 +18,12 @@ function ChinhSachBM() {
                 <br />
                 <span>
                     Bản cập nhật ngày: 31/8/2022 Chính sách bảo mật thông tin này (“Chính Sách”) được sử dụng với mục
-                    đích giúp người dùng hiểu rõ những thông tin mà Công ty TNHH Công ty dịch thuật A2Z Việt Nam (Sau
-                    đây gọi là “Công ty dịch thuật A2Z Vietnam” hoặc “chúng tôi”) thu thập và đảm bảo an toàn thông tin
+                    đích giúp người dùng hiểu rõ những thông tin mà Công ty TNHH Công ty dịch thuật VNC Việt Nam (Sau
+                    đây gọi là “Công ty dịch thuật VNC Vietnam” hoặc “chúng tôi”) thu thập và đảm bảo an toàn thông tin
                     cá nhân cho người dùng khi truy cập và/hoặc sử dụng ứng dụng di động của công ty TNHH Công ty dịch
-                    thuật A2Z Việt Nam (“Ứng dụng điện thoại của Công ty dịch thuật A2Z Vietnam”). Người dùng có trách
+                    thuật VNC Việt Nam (“Ứng dụng điện thoại của Công ty dịch thuật VNC Vietnam”). Người dùng có trách
                     nhiệm thông báo kịp thời cho chúng tôi về những hành vi sử dụng trái phép, lạm dụng, vi phạm bảo mật
-                    của bên thứ ba về việc sử dụng Ứng dụng điện thoại của Công ty dịch thuật A2Z Vietnam để có biện
+                    của bên thứ ba về việc sử dụng Ứng dụng điện thoại của Công ty dịch thuật VNC Vietnam để có biện
                     pháp giải quyết phù hợp.
                 </span>
                 <br />
@@ -33,7 +33,7 @@ function ChinhSachBM() {
                 </span>
                 <br />
                 <span>
-                    Người dùng khi sử dụng Ứng dụng điện thoại của Công ty dịch thuật A2Z Vietnam có thể được yêu cầu
+                    Người dùng khi sử dụng Ứng dụng điện thoại của Công ty dịch thuật VNC Vietnam có thể được yêu cầu
                     cung cấp các thông tin như: Họ tên, email, số điện thoại, mật khẩu đăng nhập và các thông tin khác
                     khi đăng ký tài khoản để chúng tôi có thể định danh, xác minh thông tin, hỗ trợ, liên hệ và trao đổi
                     thông tin với người dùng trong quá trình cung cấp dịch vụ. Theo yêu cầu của chúng tôi, người dùng
@@ -41,39 +41,39 @@ function ChinhSachBM() {
                     tại thời điểm được yêu cầu. Khi đồng ý cung cấp những thông tin đã nêu trên thì chúng tôi hiểu rằng
                     người dùng đã đồng ý để chúng tôi thu thập và sử dụng thông tin đó theo mục đích và phạm vi nêu tại
                     Chính Sách này. Những sai lệch về thông tin có thể sẽ ảnh hưởng tới quyền lợi của bạn và chúng tôi
-                    sẽ không chiu trách nhiệm trong những trường hợp đó. Công ty dịch thuật A2Z Vietnam sử dụng thông
+                    sẽ không chiu trách nhiệm trong những trường hợp đó. Công ty dịch thuật VNC Vietnam sử dụng thông
                     tin người dùng cung cấp để phục vụ các mục đích:
                 </span>
                 <br />
                 <span>• Cung cấp các dịch vụ/tiện ích phù hợp đến từng người dùng.</span>
                 <br />
                 <span>
-                    • Gửi các thông báo về các hoạt động trao đổi thông tin giữa người dùng và Công ty dịch thuật A2Z
+                    • Gửi các thông báo về các hoạt động trao đổi thông tin giữa người dùng và Công ty dịch thuật VNC
                     Vietnam để người dùng theo dõi quá trình trao đổi thông tin này và để thông báo rằng Công ty dịch
-                    thuật A2Z Vietnam đã ghi nhận những thông tin đó.
+                    thuật VNC Vietnam đã ghi nhận những thông tin đó.
                 </span>
                 <br />
                 <span>• Liên lạc và giải quyết với người dùng trong những trường hợp đặc biệt.</span>
                 <br />
                 <span>
-                    • Xác nhận và liên hệ có liên quan đến giao dịch tại Ứng dụng đi động của Công ty dịch thuật A2Z
+                    • Xác nhận và liên hệ có liên quan đến giao dịch tại Ứng dụng đi động của Công ty dịch thuật VNC
                     Vietnam.
                 </span>
                 <br />
                 <span>
                     • Để gửi đến người dùng các thông tin về chương trình khuyến mại, hoạt động, sự kiện đang và sắp
-                    diễn ra, nghiên cứu, khảo sát của Công ty dịch thuật A2Z Vietnam và/ hoặc bên liên kết và/ hoặc đối
+                    diễn ra, nghiên cứu, khảo sát của Công ty dịch thuật VNC Vietnam và/ hoặc bên liên kết và/ hoặc đối
                     tác của chúng tôi qua hình thức email hoặc tin nhắn văn bản, thông báo trên Ứng dụng.
                 </span>
                 <br />
                 <span>• Bất kỳ mục đích nào mà đã được người dùng đồng ý.</span>
                 <br />
                 <span>
-                    Công ty dịch thuật A2Z Việt Nam có trách nhiệm hợp tác cung cấp thông tin cá nhân của người dùng khi
+                    Công ty dịch thuật VNC Việt Nam có trách nhiệm hợp tác cung cấp thông tin cá nhân của người dùng khi
                     có yêu cầu từ cơ quan Nhà nước có thẩm quyền hoặc các trường hợp khác theo quy định của pháp luật.
                     Để thực hiện các mục đích nêu trên, chúng tôi sẽ xem xét chia sẻ thông tin với các công ty đối tác
-                    của Công ty dịch thuật A2Z Vietnam. Thông tin có thể được chia sẻ cho bên thứ ba mà chúng tôi hợp
-                    tác để phát triển Ứng dụng di động của Công ty dịch thuật A2Z Việt Nam. Tuy nhiên, trong trường hợp
+                    của Công ty dịch thuật VNC Vietnam. Thông tin có thể được chia sẻ cho bên thứ ba mà chúng tôi hợp
+                    tác để phát triển Ứng dụng di động của Công ty dịch thuật VNC Việt Nam. Tuy nhiên, trong trường hợp
                     này, chúng tôi sẽ cố gắng để đảm bảo người nhận không thể lợi dụng thông tin của người dùng để thực
                     hiện các mục đích vượt quá phạm vi sử dụng mà người dùng đã cho phép, chúng tôi cũng sẽ đảm bảo họ
                     sẽ không sử dụng những thông tin này vào những mục đích trái phép
@@ -87,14 +87,14 @@ function ChinhSachBM() {
                 <span>
                     Dữ liệu cá nhân của người dùng sẽ được lưu trữ cho đến khi có yêu cầu hủy bỏ theo quy định pháp luật
                     hoặc bởi người dùng. Còn lại trong mọi trường hợp thông tin cá nhân của người dùng sẽ được bảo mật
-                    trên máy chủ của Công ty dịch thuật A2Z MALL Vietnam và máy chủ của Chương trình Khách hàng Thân
-                    thiết Công ty dịch thuật A2Z MALL Vietnam. Người dùng có quyền sử dụng các dịch vụ và tiện ích đươc
-                    cung cấp bởi Ứng dụng di động của Công ty dịch thuật A2Z Vietnam, thay đổi, cập nhật, xóa bỏ thông
-                    tin cá nhân đã cung cấp trên hệ thống dữ liệu của Ứng dụng di động của Công ty dịch thuật A2Z
+                    trên máy chủ của Công ty dịch thuật VNC MALL Vietnam và máy chủ của Chương trình Khách hàng Thân
+                    thiết Công ty dịch thuật VNC MALL Vietnam. Người dùng có quyền sử dụng các dịch vụ và tiện ích đươc
+                    cung cấp bởi Ứng dụng di động của Công ty dịch thuật VNC Vietnam, thay đổi, cập nhật, xóa bỏ thông
+                    tin cá nhân đã cung cấp trên hệ thống dữ liệu của Ứng dụng di động của Công ty dịch thuật VNC
                     Vietnam bằng cách đăng nhập vào tài khoản cá nhân. Người dùng có quyền gửi khiếu nại đến địa chỉ
-                    website https://Công ty dịch thuật A2Z.com hoặc thông qua Ứng dụng di động của Công ty dịch thuật
-                    A2Z Vietnam. Khi tiếp nhận những phản hồi này, chúng tôi sẽ xác nhận lại thông tin; trường hợp đúng
-                    như phản ánh của người dùng, tùy theo mức độ, Công ty dịch thuật A2Z Việt Nam sẽ có những biện pháp
+                    website https://Công ty dịch thuật VNC.com hoặc thông qua Ứng dụng di động của Công ty dịch thuật
+                    VNC Vietnam. Khi tiếp nhận những phản hồi này, chúng tôi sẽ xác nhận lại thông tin; trường hợp đúng
+                    như phản ánh của người dùng, tùy theo mức độ, Công ty dịch thuật VNC Việt Nam sẽ có những biện pháp
                     xử lý kịp thời.
                 </span>
                 <br />
@@ -104,11 +104,11 @@ function ChinhSachBM() {
                 </span>
                 <br />
                 <span>
-                    Ứng dụng điện thoại của Công ty dịch thuật A2Z Vietnam có thể chứa đường liên kết đến các trang web,
-                    ứng dụng của bên thứ ba và dịch vụ trực tuyến không do Công ty dịch thuật A2Z Vietnam sở hữu hoặc
-                    kiểm soát. Công ty dịch thuật A2Z Vietnam không kiểm soát và không có trách nhiệm đối với những
+                    Ứng dụng điện thoại của Công ty dịch thuật VNC Vietnam có thể chứa đường liên kết đến các trang web,
+                    ứng dụng của bên thứ ba và dịch vụ trực tuyến không do Công ty dịch thuật VNC Vietnam sở hữu hoặc
+                    kiểm soát. Công ty dịch thuật VNC Vietnam không kiểm soát và không có trách nhiệm đối với những
                     trang web và ứng dụng trực tuyến này. Hãy lưu ý khi rời khỏi Ứng dụng di động của Công ty dịch thuật
-                    A2Z. Người dùng được khuyến nghị đọc kỹ các điều khoản và chính sách của từng trang web, ứng dụng và
+                    VNC. Người dùng được khuyến nghị đọc kỹ các điều khoản và chính sách của từng trang web, ứng dụng và
                     dịch vụ trực tuyến của bên thứ ba mà bạn truy cập.
                 </span>
                 <br />
@@ -116,7 +116,7 @@ function ChinhSachBM() {
                 <br />
                 <br />
                 <span>
-                    - Ứng dụng điện thoại của Công ty dịch thuật A2Z Vietnam có các trò chơi ngắn bao gồm Lucky wheel,
+                    - Ứng dụng điện thoại của Công ty dịch thuật VNC Vietnam có các trò chơi ngắn bao gồm Lucky wheel,
                     Quiz game và Hado. Đây là các trò chơi ngắn được sở hữu và phát hành bởi từng trung tâm thương mại
                     và mỗi trung tâm thương mại hoàn toàn chịu trách nhiệm giải quyết mọi khiếu nại của người dùng có
                     liên quan đến trò chơi ngắn được phát hành. Tất cả thông tin khách hàng cung cấp trong các trò chơi
@@ -135,17 +135,17 @@ function ChinhSachBM() {
                     <b>5. Địa chỉ của đơn vị thu thập và quản lý thông tin cá nhân</b>
                 </span>
                 <br />
-                <span>CÔNG TY TNHH Công ty dịch thuật A2Z VIỆT NAM</span>
+                <span>CÔNG TY TNHH Công ty dịch thuật VNC VIỆT NAM</span>
                 <br />
                 <span>
-                    Địa chỉ: Tầng 3, Văn phòng phía Đông, Công ty dịch thuật A2Z Long Biên, số 27 đường Cổ Linh, Phường
+                    Địa chỉ: Tầng 3, Văn phòng phía Đông, Công ty dịch thuật VNC Long Biên, số 27 đường Cổ Linh, Phường
                     Long Biên, Quận Long Biên, Thành phố Hà Nội, Việt Nam
                 </span>
                 <br />
                 <br />
-                <span>Email: nbs@Công ty dịch thuật A2Z-vn.com</span>
+                <span>Email: nbs@Công ty dịch thuật VNC-vn.com</span>
                 <br />
-                <span>Công ty dịch thuật A2Z VIETNAM CO., LTD</span>
+                <span>Công ty dịch thuật VNC VIETNAM CO., LTD</span>
                 <br />
                 <br />
                 <span>
@@ -153,7 +153,7 @@ function ChinhSachBM() {
                 </span>
                 <br />
                 <span>
-                    Thông tin cá nhân của khách hàng trên Ứng dụng di động Công ty dịch thuật A2Z Vietnam được cam kết
+                    Thông tin cá nhân của khách hàng trên Ứng dụng di động Công ty dịch thuật VNC Vietnam được cam kết
                     bảo mật tuyệt đối theo chính sách bảo vệ thông tin cá nhân của ứng dụng. Việc thu thập và sử dụng
                     thông tin của mỗi người dùng ngoài mục đích đã nêu tại chính sách bảo mật thông tin này chỉ được
                     thực hiện khi có sự đồng ý của người dùng đó, trừ những trường hợp pháp luật có quy định khác. Không
@@ -161,12 +161,12 @@ function ChinhSachBM() {
                     dùng khi không có sự cho phép đồng ý từ người dùng ngoại trừ trường hợp phải thực hiện theo yêu cầu
                     của các cơ quan Nhà nước có thẩm quyền theo quy định của pháp luật hoặc đã được người dùng đồng ý
                     dựa trên những điều khoản trong chính sách này. Trong trường hợp máy chủ lưu trữ thông tin bị hacker
-                    tấn công dẫn đến mất mát dữ liệu cá nhân người dùng, Công ty dịch thuật A2Z Vietnam sẽ có trách
+                    tấn công dẫn đến mất mát dữ liệu cá nhân người dùng, Công ty dịch thuật VNC Vietnam sẽ có trách
                     nhiệm thông báo vụ việc cho cơ quan chức năng điều tra xử lý kịp thời và thông báo cho người dùng
-                    được biết. Để Ban quản lý Công ty dịch thuật A2Z Việt Nam có thể giải quyết các yêu cầu/khiếu nại
+                    được biết. Để Ban quản lý Công ty dịch thuật VNC Việt Nam có thể giải quyết các yêu cầu/khiếu nại
                     của các cá nhân/tổ chức thì khi liên hệ với chúng tôi, người dùng vui lòng cung cấp đầy đủ thông tin
                     cá nhân có liên quan như: Họ và tên, địa chỉ liên lạc, điện thoại… và chịu trách nhiệm về những
-                    thông tin trên. Ban quản lý Công ty dịch thuật A2Z Vietnam không chịu trách nhiệm cũng như không
+                    thông tin trên. Ban quản lý Công ty dịch thuật VNC Vietnam không chịu trách nhiệm cũng như không
                     giải quyết mọi khiếu nại có liên quan đến quyền lợi của khách hàng đó nếu xét thấy tất cả thông tin
                     cá nhân của người dùng đó cung cấp khi liên hệ ban đầu là không chính xác.
                 </span>

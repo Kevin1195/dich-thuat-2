@@ -45,7 +45,7 @@ import DetailChat from '../pages/My/DetailChat';
 
 // Public Router
 
-let defaultTitle = 'Dịch thuật Công ty dịch thuật A2Z';
+let defaultTitle = 'Dịch thuật Công ty dịch thuật VNC';
 
 const publicRoutes = [
     // Trang chủ

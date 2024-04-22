@@ -8,31 +8,27 @@ function We() {
     return (
         <div className="withdraw px-[15px] py-[20px] min-h-[920px] bg-[#f2f2f2]">
             <div className="bg-[#fff] text-2xl rounded-2xl py-4 px-4 leading-10">
-                <span>CÔNG TY DỊCH THUẬT Công ty dịch thuật A2Z</span>
+                <span>CÔNG TY DỊCH THUẬT VNC</span>
                 <br />
                 <br />
                 <span>
-                    CÔNG TY DỊCH THUẬT Công ty dịch thuật A2Z Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á - đã
-                    tạo được sự hiện diện mạnh mẽ tại Việt Nam từ năm 2011. Tại Công ty dịch thuật A2Z, tập trung vào
-                    khách hàng là triết lý kinh doanh trung tâm của chúng tôi, để cam kết điều này, chúng tôi tập trung
-                    vào việc nâng cao sự tiện lợi cho khách hàng và liên tục cung cấp các dịch vụ khách hàng tốt nhất.
+                    CÔNG TY DỊCH THUẬT VNC Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á - đã tạo được sự hiện
+                    diện mạnh mẽ tại Việt Nam từ năm 2011. Tại Công ty dịch thuật VNC, tập trung vào khách hàng là triết
+                    lý kinh doanh trung tâm của chúng tôi, để cam kết điều này, chúng tôi tập trung vào việc nâng cao sự
+                    tiện lợi cho khách hàng và liên tục cung cấp các dịch vụ khách hàng tốt nhất.
                 </span>
                 <br />
                 <br />
-                <span>Các Trung tâm mua sắm của chúng tôi tại CÔNG TY DỊCH THUẬT Công ty dịch thuật A2Z:</span>
+                <span>Các Trung tâm mua sắm của chúng tôi tại CÔNG TY DỊCH THUẬT VNC:</span>
                 <br />
                 <br />
-                <span>
-                    1. Phòng 204, 64 Nguyễn Đình Chiểu, Quận 1, Tp.HCM Hướng dẫn chỉ đường: Ngã tư giao giữ Đinh Tiên
-                    Hoàng và Nguyễn Đình Chiểu.
-                </span>
+                <span>1. ĐỊA CHỈ: 205/1D Hoàng Văn Thụ, Phường 8, Quận Phú Nhuận, TP. HCM</span>
                 <br />
                 <br />
-                <span>
-                    2. 503 Nguyễn Trãi, Thanh Xuân Nam, Thanh Xuân, Hà Nội Hướng dẫn chỉ đường: Đối diện cửa hàng Thế
-                    Giới Di Động, cách phố Triều Khúc 30m, cách Cục cảnh sát điều tra tội phạm về ma túy - Bộ Công An
-                    20m.
-                </span>
+                <span>2. ĐỊA CHỈ: 48/10 Nguyễn Biểu, Phường 1, Quận 5</span>
+                <br />
+                <br />
+                <span>3. ĐỊA CHỈ: 361/31 Lê Quang Định, Phường 5, Quận Bình Thạnh</span>
                 <br />
                 <br />
                 <span>

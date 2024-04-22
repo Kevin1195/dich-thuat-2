@@ -94,7 +94,7 @@ function Home(args) {
             title: 'CÔNG CHỨNG',
             icon: congchung,
             rose: 20,
-            content: 1,
+            content: 2,
             status: 0,
         },
         {
