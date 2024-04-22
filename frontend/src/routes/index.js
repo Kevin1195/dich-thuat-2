@@ -45,7 +45,7 @@ import DetailChat from '../pages/My/DetailChat';
 
 // Public Router
 
-let defaultTitle = 'Dịch thuật Indochina Mall';
+let defaultTitle = 'Dịch thuật The Garden Shopping Center';
 
 const publicRoutes = [
     // Trang chủ
