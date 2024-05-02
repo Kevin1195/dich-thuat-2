@@ -45,7 +45,7 @@ import DetailChat from '../pages/My/DetailChat';
 
 // Public Router
 
-let defaultTitle = 'Dịch thuật Công ty dịch thuật VNC';
+let defaultTitle = 'Dịch thuật Công ty dịch thuật THISO MALL SALA';
 
 const publicRoutes = [
     // Trang chủ

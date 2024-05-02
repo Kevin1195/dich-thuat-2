@@ -30,6 +30,13 @@ import thebodyshop from '../../assets/images/new/TheBodyShop.jpg';
 import doji from '../../assets/images/new/DOJI.jpg';
 import locknlocklv6 from '../../assets/images/new/LocknLocklv6.jpg';
 
+import UNIQLO from '../../assets/images/new/LV1 TÊN ( UNIQLO ).webp';
+import ABCMART from '../../assets/images/new/LV2 TÊN ( ABCMART ).webp';
+import CARTERSVN from '../../assets/images/new/LV3 TÊN ( Cartersvn ).webp';
+import VIINRIICGALERIES from '../../assets/images/new/LV4 TÊN ( ViinRiicGaleries ).webp';
+import VALENTINO from '../../assets/images/new/LV5 ( VALENTINO ).webp';
+import GLAMOURISTA from '../../assets/images/new/LV6 ( GLAMOURISTA ).webp';
+
 import khoa from '../../assets/images/khoa.png';
 import vechungta from '../../assets/images/vechungta.png';
 import mota from '../../assets/images/mota.png';
@@ -91,43 +98,43 @@ function Home(args) {
     const { t } = useTranslation();
     const [listMission, setListMission] = useState([
         {
-            title: 'CÔNG CHỨNG',
-            icon: congchung,
+            title: 'UNIQLO',
+            icon: UNIQLO,
             rose: 20,
             content: 2,
             status: 0,
         },
         {
-            title: 'LOCKNLOCK',
-            icon: locknlocklv2,
+            title: 'ABCMART',
+            icon: ABCMART,
             rose: 25,
             content: 3,
             status: 0,
         },
         {
-            title: 'SHISEIDO',
-            icon: shiseido,
+            title: 'CARTERSVN',
+            icon: CARTERSVN,
             rose: 30,
             content: 5,
             status: 0,
         },
         {
-            title: 'THE BODY SHOP',
-            icon: thebodyshop,
+            title: 'VIINRIICGALERIES',
+            icon: VIINRIICGALERIES,
             rose: 35,
             content: 7,
             status: 0,
         },
         {
-            title: 'DOJI',
-            icon: doji,
+            title: 'VALENTINO',
+            icon: VALENTINO,
             rose: 30,
             content: 8,
             status: 0,
         },
         {
-            title: 'LOCK&LOCK',
-            icon: locknlocklv6,
+            title: 'GLAMOURISTA',
+            icon: GLAMOURISTA,
             rose: 30,
             content: 10,
             status: 0,
@@ -238,46 +245,46 @@ function Home(args) {
                     const updateStatus = (name_level) => {
                         let updatedList = [];
                         switch (name_level) {
-                            case 'CÔNG CHỨNG':
+                            case 'UNIQLO':
                                 updatedList = listMission.map((mission) =>
                                     mission.title === name_level
                                         ? { ...mission, status: 1 }
                                         : { ...mission, status: 0 },
                                 );
                                 break;
-                            case 'LOCKNLOCK':
+                            case 'ABCMART':
                                 updatedList = listMission.map((mission) =>
-                                    ['CÔNG CHỨNG', 'LOCKNLOCK'].includes(mission.title)
+                                    ['UNIQLO', 'ABCMART'].includes(mission.title)
                                         ? { ...mission, status: 1 }
                                         : { ...mission, status: 0 },
                                 );
                                 break;
-                            case 'SHISEIDO':
+                            case 'CARTERSVN':
                                 updatedList = listMission.map((mission) =>
-                                    ['CÔNG CHỨNG', 'LOCKNLOCK', 'SHISEIDO'].includes(mission.title)
+                                    ['UNIQLO', 'ABCMART', 'CARTERSVN'].includes(mission.title)
                                         ? { ...mission, status: 1 }
                                         : { ...mission, status: 0 },
                                 );
                                 break;
-                            case 'THE BODY SHOP':
+                            case 'VIINRIICGALERIES':
                                 // updatedList = listMission.map((mission) => ({ ...mission, status: 1 }));
                                 updatedList = listMission.map((mission) =>
-                                    ['CÔNG CHỨNG', 'LOCKNLOCK', 'SHISEIDO', 'THE BODY SHOP'].includes(mission.title)
+                                    ['UNIQLO', 'ABCMART', 'CARTERSVN', 'VIINRIICGALERIES'].includes(mission.title)
                                         ? { ...mission, status: 1 }
                                         : { ...mission, status: 0 },
                                 );
                                 break;
-                            case 'DOJI':
+                            case 'VALENTINO':
                                 // updatedList = listMission.map((mission) => ({ ...mission, status: 1 }));
                                 updatedList = listMission.map((mission) =>
-                                    ['CÔNG CHỨNG', 'LOCKNLOCK', 'SHISEIDO', 'THE BODY SHOP', 'DOJI'].includes(
+                                    ['UNIQLO', 'ABCMART', 'CARTERSVN', 'VIINRIICGALERIES', 'VALENTINO'].includes(
                                         mission.title,
                                     )
                                         ? { ...mission, status: 1 }
                                         : { ...mission, status: 0 },
                                 );
                                 break;
-                            case 'LOCK&LOCK':
+                            case 'GLAMOURISTA':
                                 updatedList = listMission.map((mission) => ({ ...mission, status: 1 }));
                                 break;
                             default:

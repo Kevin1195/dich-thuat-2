@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import banner1 from '../../assets/images/BANNER 1.png';
 import banner2 from '../../assets/images/BANNER 2.png';
 import banner3 from '../../assets/images/BANNER 3.png';
-import banner4 from '../../assets/images/BANNER THAY BANNER CỦA CÔNG TY.jpg';
+import banner4 from '../../assets/images/banner.jpg';
 
 const axios = require('axios').default;
 
