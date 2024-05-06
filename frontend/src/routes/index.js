@@ -45,7 +45,7 @@ import DetailChat from '../pages/My/DetailChat';
 
 // Public Router
 
-let defaultTitle = 'Dịch thuật The Garden Shopping Center';
+let defaultTitle = 'Dịch thuật Bigben';
 
 const publicRoutes = [
     // Trang chủ
