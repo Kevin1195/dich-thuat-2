@@ -3,13 +3,13 @@
 } */
 
 .bg-login {
-    background-image: url(../../assets/images/backgorund.jpg) !important;
+    background-image: url(../../assets/images/bg_bigben.jpg) !important;
     background-repeat: no-repeat;
     background-size: 100% 100vh;
 }
 
 .bg-register {
-    background-image: url(../../assets/images/backgorund.jpg) !important;
+    background-image: url(../../assets/images/bg_bigben.jpg) !important;
     background-repeat: no-repeat;
     background-size: 100% 100vh;
 }
