@@ -89,9 +89,9 @@ function Register(props) {
             <div className={cx('side-content')}>
                 {/* <h3 className={cx('title')}>{t('content.login.dangKy')}</h3> */}
 
-                {/* <label htmlFor="Label" className="text-xl text-center pb-4 leading-10 text-white">
+                <label htmlFor="Label" className="text-xl text-center pb-4 leading-10 text-black">
                     {t('content.register.luuY')}
-                </label> */}
+                </label>
                 <div className={cx('form-group')}>
                     <input
                         className={cx('form-input')}
