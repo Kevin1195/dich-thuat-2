@@ -69,7 +69,7 @@ function Login(props) {
     };
 
     return (
-        <div className="bg-login px-[15px] pt-[220px] h-[100vh]">
+        <div className="bg-login px-[15px] pt-[260px] h-[100vh]">
             <div className={cx('side-content')}>
                 {/* <div className={cx('select-language')}>
                     <select name="language" id="language" onChange={changeLanguage}>

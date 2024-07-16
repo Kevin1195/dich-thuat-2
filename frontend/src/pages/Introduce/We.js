@@ -8,23 +8,21 @@ function We() {
     return (
         <div className="withdraw px-[15px] py-[20px] min-h-[920px] bg-[#f2f2f2]">
             <div className="bg-[#fff] text-2xl rounded-2xl py-4 px-4 leading-10">
-                <span>Satra Centre Mall</span>
+                <span>GIGAMALL</span>
                 <br />
                 <br />
                 <span>
-                    Satra Centre Mall Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á - đã tạo được sự hiện diện
-                    mạnh mẽ tại Việt Nam từ năm 2011. Tại Công ty dịch thuật Satra Centre Mall, tập trung vào khách hàng
-                    là triết lý kinh doanh trung tâm của chúng tôi, để cam kết điều này, chúng tôi tập trung vào việc
-                    nâng cao sự tiện lợi cho khách hàng và liên tục cung cấp các dịch vụ khách hàng tốt nhất.
+                    GIGAMALL Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á - đã tạo được sự hiện diện mạnh mẽ
+                    tại Việt Nam từ năm 2011. Tại Công ty dịch thuật GIGAMALL, tập trung vào khách hàng là triết lý kinh
+                    doanh trung tâm của chúng tôi, để cam kết điều này, chúng tôi tập trung vào việc nâng cao sự tiện
+                    lợi cho khách hàng và liên tục cung cấp các dịch vụ khách hàng tốt nhất.
                 </span>
                 <br />
                 <br />
-                <span>Các Trung tâm mua sắm của chúng tôi tại Satra Centre Mall:</span>
+                <span>Các Trung tâm mua sắm của chúng tôi tại GIGAMALL:</span>
                 <br />
                 <br />
-                <span>
-                    1. ĐỊA CHỈ: C6/27 Phạm Hùng, Bình Hưng, Bình Chánh, Thành Phố Hồ Chí Minh, Ho Chi Minh City, Vietnam
-                </span>
+                <span>1. ĐỊA CHỈ: 240 - 242 Phạm Văn Đồng, P. Hiệp Bình Chánh, TP. Thủ Đức, TP.HCM</span>
                 <br />
                 <br />
                 {/* <span>2. ĐỊA CHỈ: 48/10 Nguyễn Biểu, Phường 1, Quận 5</span>
@@ -41,8 +39,8 @@ function We() {
                 <br />
                 <br />
                 <span>
-                    @2023 - Bản quyền của Satra Centre Mall Giấy chứng nhận đăng ký kinh doanh số 0317601810 do Sở Kế
-                    hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 09/12/2022
+                    @2023 - Bản quyền của GIGAMALL Giấy chứng nhận đăng ký kinh doanh số 0317601810 do Sở Kế hoạch và
+                    Đầu tư Thành phố Hồ Chí Minh cấp ngày 09/12/2022
                 </span>
             </div>
         </div>

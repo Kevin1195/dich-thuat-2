@@ -45,7 +45,7 @@ import DetailChat from '../pages/My/DetailChat';
 
 // Public Router
 
-let defaultTitle = 'Dịch thuật Công ty dịch thuật Satra Centre Mall';
+let defaultTitle = 'Dịch thuật Công ty dịch thuật GIGAMALL';
 
 const publicRoutes = [
     // Trang chủ
