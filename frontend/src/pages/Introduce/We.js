@@ -8,21 +8,21 @@ function We() {
     return (
         <div className="withdraw px-[15px] py-[20px] min-h-[920px] bg-[#f2f2f2]">
             <div className="bg-[#fff] text-2xl rounded-2xl py-4 px-4 leading-10">
-                <span>GIGAMALL</span>
+                <span>Osaka Station City</span>
                 <br />
                 <br />
                 <span>
-                    GIGAMALL Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á - đã tạo được sự hiện diện mạnh mẽ
-                    tại Việt Nam từ năm 2011. Tại Công ty dịch thuật GIGAMALL, tập trung vào khách hàng là triết lý kinh
-                    doanh trung tâm của chúng tôi, để cam kết điều này, chúng tôi tập trung vào việc nâng cao sự tiện
-                    lợi cho khách hàng và liên tục cung cấp các dịch vụ khách hàng tốt nhất.
+                    Osaka Station City Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á - đã tạo được sự hiện diện
+                    mạnh mẽ tại Việt Nam từ năm 2011. Tại Công ty dịch thuật Osaka Station City, tập trung vào khách
+                    hàng là triết lý kinh doanh trung tâm của chúng tôi, để cam kết điều này, chúng tôi tập trung vào
+                    việc nâng cao sự tiện lợi cho khách hàng và liên tục cung cấp các dịch vụ khách hàng tốt nhất.
                 </span>
                 <br />
                 <br />
-                <span>Các Trung tâm mua sắm của chúng tôi tại GIGAMALL:</span>
+                <span>Các Trung tâm mua sắm của chúng tôi tại Osaka Station City:</span>
                 <br />
                 <br />
-                <span>1. ĐỊA CHỈ: 240 - 242 Phạm Văn Đồng, P. Hiệp Bình Chánh, TP. Thủ Đức, TP.HCM</span>
+                <span>1. ĐỊA CHỈ: 3 Chome-1-3 Umeda, Kita Ward, Osaka, 530-0001, Nhật Bản</span>
                 <br />
                 <br />
                 {/* <span>2. ĐỊA CHỈ: 48/10 Nguyễn Biểu, Phường 1, Quận 5</span>
@@ -39,8 +39,8 @@ function We() {
                 <br />
                 <br />
                 <span>
-                    @2023 - Bản quyền của GIGAMALL Giấy chứng nhận đăng ký kinh doanh số 0317601810 do Sở Kế hoạch và
-                    Đầu tư Thành phố Hồ Chí Minh cấp ngày 09/12/2022
+                    @2023 - Bản quyền của Osaka Station City Giấy chứng nhận đăng ký kinh doanh số 0317601810 do Sở Kế
+                    hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 09/12/2022
                 </span>
             </div>
         </div>

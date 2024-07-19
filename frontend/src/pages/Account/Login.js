@@ -7,7 +7,7 @@ import { faLock, faLockOpen } from '@fortawesome/free-solid-svg-icons';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import banner from '../../assets/images/banner33.png';
-import logoTitle from '../../assets/images/central-logo.png';
+import logoTitle from '../../assets/images/logo_osaka.png';
 import gg_fb from '../../assets/images/logo_gg_fbs.png';
 import Account from './index';
 import iconUser from '../../assets/images/icon-user.png';
@@ -69,7 +69,7 @@ function Login(props) {
     };
 
     return (
-        <div className="bg-login px-[15px] pt-[260px] h-[100vh]">
+        <div className="bg-login px-[15px] pt-[160px] h-[100vh]">
             <div className={cx('side-content')}>
                 {/* <div className={cx('select-language')}>
                     <select name="language" id="language" onChange={changeLanguage}>
@@ -80,7 +80,7 @@ function Login(props) {
                     </select>
                 </div> */}
                 <div className="img-logo flex items-center justify-center pb-8">
-                    {/* <img src={logoTitle} alt="" className={cx('banner-img')} /> */}
+                    <img src={logoTitle} alt="" className={cx('banner-img')} />
                 </div>
                 <div className={cx('form-group')}>
                     <img src={iconUser} alt="Icon User" className={cx('icon-left')} />

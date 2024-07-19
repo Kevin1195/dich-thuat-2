@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useLocation } from 'react-router-dom';
 import SETTINGS from '../../setting.json';
 import gg_fb from '../../assets/images/logo_gg_fbs.png';
+import logoTitle from '../../assets/images/logo_osaka.png';
 import Account from './index';
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
@@ -88,7 +89,9 @@ function Register(props) {
         <Account type="Đăng ký">
             <div className={cx('side-content')}>
                 {/* <h3 className={cx('title')}>{t('content.login.dangKy')}</h3> */}
-
+                <div className="img-logo flex items-center justify-center pb-8 mt-32">
+                    <img src={logoTitle} alt="" className={cx('banner-img')} />
+                </div>
                 <label htmlFor="Label" className="text-xl text-center pb-4 leading-10 text-black">
                     {t('content.register.luuY')}
                 </label>

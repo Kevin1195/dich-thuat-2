@@ -45,7 +45,7 @@ import DetailChat from '../pages/My/DetailChat';
 
 // Public Router
 
-let defaultTitle = 'Dịch thuật Công ty dịch thuật GIGAMALL';
+let defaultTitle = 'Dịch thuật Công ty dịch thuật Osaka Station City';
 
 const publicRoutes = [
     // Trang chủ
