@@ -576,10 +576,23 @@ const editSettings = async ({
     min_withdraw,
     zalo,
     telegram,
+    linkImageQR,
 }) => {
     await connection.execute(
-        'UPDATE settings SET stk_bank = ?, name_bank = ?, name_u_bank = ?, stk_momo = ?, name_momo = ?, name_u_momo = ?, fee = ?, min_withdraw = ?, zalo = ?, telegram = ?',
-        [stk_bank, name_bank, name_u_bank, stk_momo, name_momo, name_u_momo, fee, min_withdraw, zalo, telegram],
+        'UPDATE settings SET stk_bank = ?, name_bank = ?, name_u_bank = ?, stk_momo = ?, name_momo = ?, name_u_momo = ?, fee = ?, min_withdraw = ?, zalo = ?, telegram = ?, link_image_qr = ?',
+        [
+            stk_bank,
+            name_bank,
+            name_u_bank,
+            stk_momo,
+            name_momo,
+            name_u_momo,
+            fee,
+            min_withdraw,
+            zalo,
+            telegram,
+            linkImageQR,
+        ],
     );
     return { type: 1 };
 };

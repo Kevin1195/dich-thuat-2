@@ -305,9 +305,9 @@ function Home(args) {
         <div id="Home">
             <div className="top-header-content">
                 <div className="lt-header-content">
-                    <div className="text-5xl text-black font-bold pb-3">Dịch thuật</div>
+                    <div className="text-3xl text-black font-bold pb-3 text-center">Osaka Station City</div>
                     <span className="text-lg text-black">
-                        Đa chuyên ngành, hỗ trợ 24/7, đội ngũ nhân viên nhiều năm kinh nghiệm
+                        Osaka Station City Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á.
                     </span>
                 </div>
                 <div className="title-name-user text-2xl">
