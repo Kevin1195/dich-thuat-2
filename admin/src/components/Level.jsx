@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import SETTINGS from "../setting.json";
 import { toast } from "react-toastify";
-const axios = require("axios").default;
+import axios from "axios";
 
-const Member = props => {
+const Member = (props) => {
   let { id_level, name_level, price, roses, amount, withdraw_per_day } =
     props.data;
 
@@ -57,7 +57,7 @@ const Member = props => {
         },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data;
@@ -78,7 +78,7 @@ const Member = props => {
       });
   };
 
-  const DeleteMission = async type => {
+  const DeleteMission = async (type) => {
     const headers = {
       "x-access-token": localStorage.getItem("auth_portal"),
       "Access-Control-Allow-Origin": "*",
@@ -89,7 +89,7 @@ const Member = props => {
         { id_level, type: "delete" },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data;
@@ -143,7 +143,7 @@ const Member = props => {
                   <div className="form-group mb-[20px]">
                     <p className="text-left text-[#999]">Tên cấp độ</p>
                     <input
-                      onChange={e => setName_level(e.target.value)}
+                      onChange={(e) => setName_level(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       placeholder="Tên cấp độ"
                       defaultValue={name_level}
@@ -152,7 +152,7 @@ const Member = props => {
                   <div className="form-group mb-[20px]">
                     <p className="text-left text-[#999]">Số tiền đầu tư</p>
                     <input
-                      onChange={e => setPrice_new(e.target.value)}
+                      onChange={(e) => setPrice_new(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       placeholder="Số tiền đầu tư"
                       defaultValue={price}
@@ -163,7 +163,7 @@ const Member = props => {
                       Số đơn hàng trong ngày
                     </p>
                     <input
-                      onChange={e => setAmount(e.target.value)}
+                      onChange={(e) => setAmount(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       placeholder="Số đơn hàng trong ngày"
                       defaultValue={amount}
@@ -174,7 +174,7 @@ const Member = props => {
                       Hoa hồng nhận được (%)
                     </p>
                     <input
-                      onChange={e => setRoses(e.target.value)}
+                      onChange={(e) => setRoses(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       placeholder="Hoa hồng nhận được (%)"
                       defaultValue={roses}
@@ -185,7 +185,7 @@ const Member = props => {
                       Số lượt rút tiền trong ngày
                     </p>
                     <input
-                      onChange={e => setWithdraw_per_day(e.target.value)}
+                      onChange={(e) => setWithdraw_per_day(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       placeholder="Số lượt rút tiền trong ngày"
                       defaultValue={withdraw_per_day}

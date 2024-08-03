@@ -333,7 +333,10 @@ function My() {
                         </div>
                         <hr />
                         <div className="flex flex-wrap">
-                            <Link to="/support" className="flex items-center justify-center w-[50%] text-black">
+                            <Link
+                                to="https://t.me/CSKH_OSAKA"
+                                className="flex items-center justify-center w-[50%] text-black"
+                            >
                                 <img src={dichvuchamsockh} alt="" className="w-[24px] h-[24px]" />
                                 {/* <BiSupport color="blue" size={25} /> */}
                                 <span className="text-lg font-bold pl-2 text-center">

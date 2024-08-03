@@ -400,7 +400,7 @@ function Home(args) {
                                     {t('content.home.hoaHong')}
                                     {item.rose}%
                                 </p>
-                                <p className="text-xl mt-4 ">{item.content} đơn dịch</p>
+                                <p className="text-xl mt-4 ">{item.content} đơn</p>
                             </div>
                         </div>
                     );

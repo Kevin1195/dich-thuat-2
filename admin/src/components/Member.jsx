@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import SETTINGS from "../setting.json";
 import { toast } from "react-toastify";
-const axios = require("axios").default;
+import axios from "axios";
 
-const Member = props => {
+const Member = (props) => {
   let {
     username,
     money,
@@ -64,7 +64,7 @@ const Member = props => {
     };
   }, []);
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     setVip(event.target.value);
   };
 
@@ -97,7 +97,7 @@ const Member = props => {
         },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data;
@@ -118,7 +118,7 @@ const Member = props => {
       });
   };
   // console.log(mayman)
-  const DeleteMission = async type => {
+  const DeleteMission = async (type) => {
     const headers = {
       "x-access-token": localStorage.getItem("auth_portal"),
       "Access-Control-Allow-Origin": "*",
@@ -129,7 +129,7 @@ const Member = props => {
         { username, type: type },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data;
@@ -250,7 +250,7 @@ const Member = props => {
                   <div className="form-group mb-[5px]">
                     <p className="text-left text-[#999]">Vòng quay may mắn:</p>
                     <select
-                      onChange={e => setMayMan(e.target.value)}
+                      onChange={(e) => setMayMan(e.target.value)}
                       defaultValue={may_man}
                       className="form-select appearance-none
                             block
@@ -285,7 +285,7 @@ const Member = props => {
                       Đã đóng thuế hộp quà may mắn chưa?
                     </p>
                     <select
-                      onChange={e => setThuemayman(e.target.value)}
+                      onChange={(e) => setThuemayman(e.target.value)}
                       defaultValue={thue_may_man}
                       className="form-select appearance-none
                             block
@@ -313,7 +313,7 @@ const Member = props => {
                       Khách đã quay hay chưa?
                     </p>
                     <select
-                      onChange={e => setDaQuayMM(e.target.value)}
+                      onChange={(e) => setDaQuayMM(e.target.value)}
                       defaultValue={da_quay_may_man}
                       className="form-select appearance-none
                             block
@@ -345,7 +345,7 @@ const Member = props => {
                       Số dư (Cập nhật số dư mới) $:
                     </p>
                     <input
-                      onChange={e => setMoney(e.target.value)}
+                      onChange={(e) => setMoney(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       placeholder="Số dư"
                       defaultValue={money_new}
@@ -354,7 +354,7 @@ const Member = props => {
                   <div className="form-group mb-[5px]">
                     <p className="text-left text-[#999]">Số dư đóng băng mới</p>
                     <input
-                      onChange={e => setDongbang(e.target.value)}
+                      onChange={(e) => setDongbang(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       placeholder="Số dư"
                       defaultValue={dongbang}
@@ -363,7 +363,7 @@ const Member = props => {
                   <div className="form-group mb-[5px]">
                     <p className="text-left text-[#999]">Đổi mật khẩu</p>
                     <input
-                      onChange={e => setPassword(e.target.value)}
+                      onChange={(e) => setPassword(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       placeholder="Mật khẩu mới (Lưu ý: nếu không đổi thì không nhập gì vào đây)"
                       defaultValue={password_new}
@@ -374,7 +374,7 @@ const Member = props => {
                       Đổi mật khẩu rút tiền
                     </p>
                     <input
-                      onChange={e => setPassBank(e.target.value)}
+                      onChange={(e) => setPassBank(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       placeholder="Mật khẩu rút tiền mới (Lưu ý: nếu không đổi thì không nhập gì vào đây)"
                       defaultValue={passbank}
@@ -383,7 +383,7 @@ const Member = props => {
                   <div className="form-group my-[5px]">
                     <p className="text-left text-[#999]">Cấp Đại Lý</p>
                     <select
-                      onChange={e => handleChange(e)}
+                      onChange={(e) => handleChange(e)}
                       defaultValue={vip_new || roses_user}
                       className="form-select appearance-none
                             block
@@ -413,7 +413,7 @@ const Member = props => {
                   <div className="form-group mb-[5px]">
                     <p className="text-left text-[#999]">Mã nhận đơn</p>
                     <input
-                      onChange={e => setVipNhanDon(e.target.value)}
+                      onChange={(e) => setVipNhanDon(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       defaultValue={vip_NhanDonNew}
                     />
@@ -498,7 +498,7 @@ const Member = props => {
                   <div className="form-group my-[5px]">
                     <p className="text-left text-[#999]">Quyền:</p>
                     <select
-                      onChange={e => setLevel(e.target.value)}
+                      onChange={(e) => setLevel(e.target.value)}
                       defaultValue={level_new}
                       className="form-select appearance-none
                             block
@@ -523,7 +523,7 @@ const Member = props => {
                   <div className="form-group mb-[5px]">
                     <p className="text-left text-[#999]">Tên ngân hàng</p>
                     <input
-                      onChange={e => setNameBank(e.target.value)}
+                      onChange={(e) => setNameBank(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       defaultValue={nameBank}
                     />
@@ -533,7 +533,7 @@ const Member = props => {
                       Chủ tài khoản ngân hàng
                     </p>
                     <input
-                      onChange={e => setNameubank(e.target.value)}
+                      onChange={(e) => setNameubank(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       defaultValue={nameubank}
                     />
@@ -541,7 +541,7 @@ const Member = props => {
                   <div className="form-group mb-[5px]">
                     <p className="text-left text-[#999]">Số tài khoản</p>
                     <input
-                      onChange={e => setStkBank(e.target.value)}
+                      onChange={(e) => setStkBank(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       defaultValue={stkBank}
                     />
@@ -551,7 +551,7 @@ const Member = props => {
                       Gỡ bỏ ngân hàng
                     </p>
                     <select
-                      onChange={e => setDBank(e.target.value)}
+                      onChange={(e) => setDBank(e.target.value)}
                       defaultValue={delete_bank}
                       className="form-select appearance-none
                             block

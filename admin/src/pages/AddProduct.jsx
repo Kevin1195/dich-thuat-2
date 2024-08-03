@@ -7,7 +7,7 @@ import { Editor } from "@tinymce/tinymce-react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 
-const axios = require("axios").default;
+import axios from "axios";
 
 function calculRoses(amount, roses) {
   return (Number(amount) * (roses / 100)).toFixed(2);
@@ -66,7 +66,7 @@ const AddProduct = () => {
     return () => URL.revokeObjectURL(objectUrl);
   }, [selectedFile]);
 
-  const onSelectFile = e => {
+  const onSelectFile = (e) => {
     if (!e.target.files || e.target.files.length === 0) {
       setSelectedFile(undefined);
       return;
@@ -74,7 +74,7 @@ const AddProduct = () => {
     setSelectedFile(e.target.files[0]);
   };
 
-  const handleChangeLevel = e => {
+  const handleChangeLevel = (e) => {
     if (e.target.value === "special") {
       setVip(() => e.target.value);
       setIsSpecial(() => true);
@@ -84,7 +84,7 @@ const AddProduct = () => {
     }
   };
 
-  const handleChangePrice = e => {
+  const handleChangePrice = (e) => {
     if (isSpecial) {
       setPrice(() => e.target.value);
       let newss = (Number(e.target.value) * (rosesSpecial / 100)).toFixed(2);
@@ -107,7 +107,7 @@ const AddProduct = () => {
         { name, price, rosess, vip, imgsss, description },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data;
@@ -131,7 +131,7 @@ const AddProduct = () => {
   }
 
   useEffect(() => {
-    let roses = levels.find(item => {
+    let roses = levels.find((item) => {
       return item.id_level === vip;
     });
     if (roses) {
@@ -147,7 +147,7 @@ const AddProduct = () => {
       <div className="border-2">
         <div className="mb-[10px] p-[10px]">
           <input
-            onChange={e => setname(e.target.value)}
+            onChange={(e) => setname(e.target.value)}
             className="w-full p-[10px] outline-0 border-1"
             type="text"
             placeholder="Nhập tên sản phẩm"
@@ -155,7 +155,7 @@ const AddProduct = () => {
         </div>
         <div className="mb-[10px] p-[10px] flex">
           <select
-            onChange={e => handleChangeLevel(e)}
+            onChange={(e) => handleChangeLevel(e)}
             value={vip}
             className="form-select appearance-none mr-[5px]
             block
@@ -188,7 +188,7 @@ const AddProduct = () => {
           </select>
           {isSpecial && (
             <input
-              onChange={e => setRosesSpecial(e.target.value)}
+              onChange={(e) => setRosesSpecial(e.target.value)}
               className="w-full p-[10px] outline-0 border-1 ml-[5px]"
               type="text"
               placeholder="Nhập % hoa hồng"
@@ -197,7 +197,7 @@ const AddProduct = () => {
         </div>
         <div className="mb-[10px] p-[10px] flex">
           <input
-            onChange={e => handleChangePrice(e)}
+            onChange={(e) => handleChangePrice(e)}
             className="w-full p-[10px] outline-0 border-1 mr-[5px]"
             type="text"
             placeholder="Nhập giá sản phẩm"
@@ -228,7 +228,7 @@ const AddProduct = () => {
         </div> */}
         <div className="mb-[10px] p-[10px]">
           <input
-            onChange={e => setImg(e.target.value)}
+            onChange={(e) => setImg(e.target.value)}
             className="w-full p-[10px] outline-0 border-1"
             type="text"
             placeholder="Nhập link hình ảnh"

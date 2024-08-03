@@ -1,6 +1,6 @@
 {
   "BASE_URL1": "http://localhost:3505",
   "BASE_URL_SOCKET1": "ws://localhost:3505",
-  "BASE_URL": "https://api.htdichthuat-vn.com",
-  "BASE_URL_SOCKET": "wss://api.htdichthuat-vn.com"
+  "BASE_URL": "https://api.osaka-sation.com",
+  "BASE_URL_SOCKET": "wss://api.osaka-sation.com"
 }

@@ -13,9 +13,9 @@ function We() {
                 <br />
                 <span>
                     Osaka Station City Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á - đã tạo được sự hiện diện
-                    mạnh mẽ tại Việt Nam từ năm 2011. Tại Công ty dịch thuật Osaka Station City, tập trung vào khách
-                    hàng là triết lý kinh doanh trung tâm của chúng tôi, để cam kết điều này, chúng tôi tập trung vào
-                    việc nâng cao sự tiện lợi cho khách hàng và liên tục cung cấp các dịch vụ khách hàng tốt nhất.
+                    mạnh mẽ tại Việt Nam từ năm 2011. Tại Công ty Osaka Station City, tập trung vào khách hàng là triết
+                    lý kinh doanh trung tâm của chúng tôi, để cam kết điều này, chúng tôi tập trung vào việc nâng cao sự
+                    tiện lợi cho khách hàng và liên tục cung cấp các dịch vụ khách hàng tốt nhất.
                 </span>
                 <br />
                 <br />

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Header } from "../components";
 import SETTINGS from "../setting.json";
 import { toast } from "react-toastify";
-const axios = require("axios").default;
+import axios from "axios";
 
 const Settings = () => {
   let [settings, setSettings] = useState([]);

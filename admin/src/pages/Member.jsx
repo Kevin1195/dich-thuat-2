@@ -102,7 +102,7 @@ import { ContextLevelList } from "../contexts/ContextLevelList";
 import { useStateContext } from "../contexts/ContextProvider";
 import "./Pagination.scss";
 
-const axios = require("axios").default;
+import axios from "axios";
 
 const Member = () => {
   const { reload } = useStateContext();

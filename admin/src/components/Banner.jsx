@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import SETTINGS from "../setting.json";
 import { toast } from "react-toastify";
-const axios = require("axios").default;
-const Banner = props => {
+import axios from "axios";
+const Banner = (props) => {
   let { id } = props.data;
   const [edit, setEdit] = useState(false);
   const [deletes, setDelete] = useState(false);
@@ -18,7 +18,7 @@ const Banner = props => {
         { id, status: 1 },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data;
@@ -51,7 +51,7 @@ const Banner = props => {
         { id, status: 2 },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data;

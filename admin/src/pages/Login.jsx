@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-const axios = require("axios").default;
+import axios from "axios";
 
 const cx = classNames.bind(styles);
 
@@ -25,7 +25,7 @@ function Login() {
             "x-access-token": localStorage.getItem("auth_portal"),
             "Access-Control-Allow-Origin": "*",
           },
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data.data;
@@ -61,7 +61,7 @@ function Login() {
           <div className={cx("form-group")}>
             <p className="text-[#999] text-[14px]">Tài khoản</p>
             <input
-              onChange={e => setUsername(e.target.value)}
+              onChange={(e) => setUsername(e.target.value)}
               type="text"
               placeholder="username"
               spellCheck="false"
@@ -71,7 +71,7 @@ function Login() {
           <div className={cx("form-group")}>
             <p className="text-[#999] text-[14px]">Mật khẩu</p>
             <input
-              onChange={e => setPassword(e.target.value)}
+              onChange={(e) => setPassword(e.target.value)}
               placeholder="············"
               type="password"
               spellCheck="false"

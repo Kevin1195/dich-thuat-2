@@ -16,7 +16,7 @@ import { Header } from "../components";
 import SETTINGS from "../setting.json";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-const axios = require("axios").default;
+import axios from "axios";
 const Banner = () => {
   let [banner, setBanner] = useState([]);
   const [link, setLink] = useState();

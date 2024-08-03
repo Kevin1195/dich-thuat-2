@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SETTINGS from "../setting.json";
 import { toast } from "react-toastify";
-const axios = require("axios").default;
+import axios from "axios";
 
 function calculRoses(amount, roses) {
   return (Number(amount) * (roses / 100)).toFixed(2);

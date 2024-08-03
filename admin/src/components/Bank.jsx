@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import SETTINGS from "../setting.json";
 import { toast } from "react-toastify";
 import { useStateContext } from "../contexts/ContextProvider";
-const axios = require("axios").default;
+import axios from "axios";
 
-const Member = props => {
+const Member = (props) => {
   let { name, id } = props.data;
   const { setReload } = useStateContext();
 
@@ -47,12 +47,12 @@ const Member = props => {
         },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let { status, msg } = response.data.result;
         if (status) {
-          setReload(pre => !pre);
+          setReload((pre) => !pre);
           setEdit(false);
           return toast.success(msg, {
             theme: "light",
@@ -64,7 +64,7 @@ const Member = props => {
       });
   };
 
-  const DeleteMission = async type => {
+  const DeleteMission = async (type) => {
     const headers = {
       "x-access-token": localStorage.getItem("auth_portal"),
       "Access-Control-Allow-Origin": "*",
@@ -75,12 +75,12 @@ const Member = props => {
         { id, type: "delete" },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let { status, msg } = response.data.result;
         if (status) {
-          setReload(pre => !pre);
+          setReload((pre) => !pre);
           setDelete(false);
           return toast.success(msg, {
             theme: "light",
@@ -118,7 +118,7 @@ const Member = props => {
                   <div className="form-group mb-[20px]">
                     <p className="text-left text-[#999]">name</p>
                     <input
-                      onChange={e => setNameBank(e.target.value)}
+                      onChange={(e) => setNameBank(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       placeholder="Tài khoản"
                       defaultValue={name}

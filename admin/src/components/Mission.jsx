@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import SETTINGS from "../setting.json";
 import { toast } from "react-toastify";
 import { useStateContext } from "../contexts/ContextProvider";
-const axios = require("axios").default;
+import axios from "axios";
 
 function calculRoses(amount, roses) {
   return (Number(amount) * (roses / 100)).toFixed(2);
 }
 
-const Mission = props => {
+const Mission = (props) => {
   let { id_mission_done, id_mission, username, status } = props.data;
 
   const { setReload } = useStateContext();
@@ -25,13 +25,13 @@ const Mission = props => {
         { id_mission_done, id_mission, username },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data;
         if (data.status === "ok") {
           setEdit(false);
-          setReload(pre => !pre);
+          setReload((pre) => !pre);
           window.location.reload();
           return toast.success("Xác nhận duyệt đơn thành công !", {
             theme: "light",
@@ -54,7 +54,7 @@ const Mission = props => {
         { id_mission_done },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data;

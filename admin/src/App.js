@@ -32,9 +32,9 @@ import Chat from "./pages/Chat";
 
 import { WebSocketProvider } from "./contexts/WebSocket";
 
-const axios = require("axios").default;
+import axios from "axios";
 
-const App = props => {
+const App = (props) => {
   let [check, setCheck] = useState(true);
   const {
     setCurrentColor,

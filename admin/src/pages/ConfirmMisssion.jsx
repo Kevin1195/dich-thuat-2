@@ -18,7 +18,7 @@ import { gridMission } from "../data/dummy";
 import { Header } from "../components";
 import { useStateContext } from "../contexts/ContextProvider";
 
-const axios = require("axios").default;
+import axios from "axios";
 
 const ConfirmMisssion = () => {
   const { reload } = useStateContext();

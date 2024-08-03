@@ -17,7 +17,7 @@ import { toast } from "react-toastify";
 import { ordersData, ordersGrid2 } from "../data/dummy";
 import { Header } from "../components";
 
-const axios = require("axios").default;
+import axios from "axios";
 
 const Recharge = () => {
   let [listMissions, setListMission] = useState([]);

@@ -3,13 +3,13 @@ import SETTINGS from "../setting.json";
 import { toast } from "react-toastify";
 import { Editor } from "@tinymce/tinymce-react";
 import ReactQuill from "react-quill";
-const axios = require("axios").default;
+import axios from "axios";
 
 function calculRoses(amount, roses) {
   return (Number(amount) * (roses / 100)).toFixed(2);
 }
 
-const EditProduct = props => {
+const EditProduct = (props) => {
   let {
     id_mission,
     name_mission,
@@ -54,10 +54,10 @@ const EditProduct = props => {
     };
   }, []);
 
-  let roses = list_level?.find(item => {
+  let roses = list_level?.find((item) => {
     return item.id_level === level_mission;
   });
-  const handleChange = event => {
+  const handleChange = (event) => {
     setVip(event.target.value);
   };
   const EditMission = async () => {
@@ -80,7 +80,7 @@ const EditProduct = props => {
         },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data;
@@ -123,7 +123,7 @@ const EditProduct = props => {
         },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data;
@@ -169,7 +169,7 @@ const EditProduct = props => {
                 <div>
                   <div className="form-group mb-[20px]">
                     <input
-                      onChange={e => setName(e.target.value)}
+                      onChange={(e) => setName(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       placeholder="Tên sản phẩm"
                       defaultValue={name_mission}
@@ -177,7 +177,7 @@ const EditProduct = props => {
                   </div>
                   <div className="form-group mb-[20px]">
                     <input
-                      onChange={e => {
+                      onChange={(e) => {
                         let arr = calculRoses(e.target.value, roses.roses);
                         setRoses(arr);
                         setPrice(e.target.value);
@@ -196,7 +196,7 @@ const EditProduct = props => {
                   </div>
                   <div className="form-group my-[25px]">
                     <select
-                      onChange={e => handleChange(e)}
+                      onChange={(e) => handleChange(e)}
                       value={vip_new || level_mission}
                       className="form-select appearance-none
                             block
@@ -225,7 +225,7 @@ const EditProduct = props => {
                   </div>
                   <div className="form-group mb-[20px]">
                     <input
-                      onChange={e => setImg(e.target.value)}
+                      onChange={(e) => setImg(e.target.value)}
                       className="p-[10px] border-solid border-2 w-full"
                       placeholder="Link Hình Ảnh"
                       defaultValue={img_new}

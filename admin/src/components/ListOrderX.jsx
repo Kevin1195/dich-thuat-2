@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import SETTINGS from "../setting.json";
 import { toast } from "react-toastify";
-const axios = require("axios").default;
+import axios from "axios";
 
-const ListOrderX = props => {
+const ListOrderX = (props) => {
   let { id, username, id_mission } = props.data;
   const [edit, setEdit] = useState(false);
   const [deletes, setDelete] = useState(false);
@@ -18,7 +18,7 @@ const ListOrderX = props => {
         { id, username, id_mission, type: "duyet" },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data;
@@ -54,7 +54,7 @@ const ListOrderX = props => {
         { id, username, id_mission, type: "huyduyet" },
         {
           headers,
-        },
+        }
       )
       .then(async function (response) {
         let data = response.data;

@@ -136,11 +136,7 @@ function Navbar(props) {
                         </div>
                     </div>
                 </Link>
-                <Link
-                    to="https://direct.lc.chat/15914457/"
-                    target="_blank"
-                    className="flex-1 flex justify-center text-center"
-                >
+                <Link to="https://t.me/CSKH_OSAKA" target="_blank" className="flex-1 flex justify-center text-center">
                     <div className="flex-1 flex justify-center text-center flex-col py-2">
                         <div className="bar-item__icon flex justify-center">
                             {!cskhN ? (

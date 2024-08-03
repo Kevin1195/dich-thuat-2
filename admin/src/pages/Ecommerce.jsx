@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { GoPrimitiveDot } from "react-icons/go";
+// import { GoPrimitiveDot } from "react-icons/go";
 
 import { Stacked, Button, SparkLine } from "../components";
 import { SparklineAreaData } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
 import SETTINGS from "../setting.json";
 import { toast } from "react-toastify";
-const axios = require("axios").default;
+import axios from "axios";
 function formatMoney(money = 0) {
   return String(money).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
 }
@@ -82,15 +82,15 @@ const Ecommerce = () => {
               <p className="font-semibold text-xl">Revenue Updates</p>
               <div className="flex items-center gap-4">
                 <p className="flex items-center gap-2 text-gray-600 hover:drop-shadow-xl">
-                  <span>
+                  {/* <span>
                     <GoPrimitiveDot />
-                  </span>
+                  </span> */}
                   <span>Expense</span>
                 </p>
                 <p className="flex items-center gap-2 text-green-400 hover:drop-shadow-xl">
-                  <span>
+                  {/* <span>
                     <GoPrimitiveDot />
-                  </span>
+                  </span> */}
                   <span>Budget</span>
                 </p>
               </div>
