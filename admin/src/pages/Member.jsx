@@ -18,7 +18,7 @@
 // import { Header } from '../components';
 // import { useStateContext } from '../contexts/ContextProvider';
 
-// const axios = require('axios').default;
+// import axios from "axios";
 
 // const Member = () => {
 //     const { reload } = useStateContext();
