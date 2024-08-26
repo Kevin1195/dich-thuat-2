@@ -92,7 +92,10 @@ function Register(props) {
                 {/* <label htmlFor="Label" className="text-xl text-center pb-4 leading-10 text-white">
                     {t('content.register.luuY')}
                 </label> */}
-                <div className={cx('form-group')}>
+                <div className="img-logo flex items-center justify-center pb-8 h-auto mb-4 mt-[200px]">
+                    {/* <img src="/logo.jpg" alt="" className="w-1/2" /> */}
+                </div>
+                <div className={cx('form-group ')}>
                     <input
                         className={cx('form-input')}
                         onInput={(e) => {

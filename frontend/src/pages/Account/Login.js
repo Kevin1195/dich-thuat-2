@@ -69,7 +69,7 @@ function Login(props) {
     };
 
     return (
-        <div className="bg-login px-[15px] pt-[220px] h-[100vh]">
+        <div className="bg-login px-[15px] pt-[250px] h-[100vh]">
             <div className={cx('side-content')}>
                 {/* <div className={cx('select-language')}>
                     <select name="language" id="language" onChange={changeLanguage}>
@@ -79,9 +79,9 @@ function Login(props) {
                         <option value="ko">Hàn Quốc</option>
                     </select>
                 </div> */}
-                <div className="img-logo flex items-center justify-center pb-8">
-                    {/* <img src={logoTitle} alt="" className={cx('banner-img')} /> */}
-                </div>
+                {/* <div className="img-logo flex items-center justify-center pb-8 h-auto mb-12">
+                    <img src="/logo.jpg" alt="" className="w-1/2" />
+                </div> */}
                 <div className={cx('form-group')}>
                     <img src={iconUser} alt="Icon User" className={cx('icon-left')} />
                     <input

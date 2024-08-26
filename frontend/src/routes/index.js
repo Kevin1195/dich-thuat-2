@@ -45,7 +45,7 @@ import DetailChat from '../pages/My/DetailChat';
 
 // Public Router
 
-let defaultTitle = 'Dịch thuật Unionsquare';
+let defaultTitle = 'Dịch thuật PSS';
 
 const publicRoutes = [
     // Trang chủ
