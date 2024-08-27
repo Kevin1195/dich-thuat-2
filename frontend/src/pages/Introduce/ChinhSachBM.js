@@ -90,12 +90,12 @@ function ChinhSachBM() {
                     trên máy chủ của Công ty LOTTE YOUNG PLAZA MALL Vietnam và máy chủ của Chương trình Khách hàng Thân
                     thiết Công ty LOTTE YOUNG PLAZA MALL Vietnam. Người dùng có quyền sử dụng các dịch vụ và tiện ích
                     đươc cung cấp bởi Ứng dụng di động của Công ty LOTTE YOUNG PLAZA Vietnam, thay đổi, cập nhật, xóa bỏ
-                    thông tin cá nhân đã cung cấp trên hệ thống dữ liệu của Ứng dụng di động của Công ty Osaka Station
-                    City Vietnam bằng cách đăng nhập vào tài khoản cá nhân. Người dùng có quyền gửi khiếu nại đến địa
-                    chỉ website https://Công ty Satra Centre Mall.com hoặc thông qua Ứng dụng di động của Công ty LOTTE
-                    YOUNG PLAZA Vietnam. Khi tiếp nhận những phản hồi này, chúng tôi sẽ xác nhận lại thông tin; trường
-                    hợp đúng như phản ánh của người dùng, tùy theo mức độ, Công ty LOTTE YOUNG PLAZA Việt Nam sẽ có
-                    những biện pháp xử lý kịp thời.
+                    thông tin cá nhân đã cung cấp trên hệ thống dữ liệu của Ứng dụng di động của Công ty LOTTE YOUNG
+                    PLAZA City Vietnam bằng cách đăng nhập vào tài khoản cá nhân. Người dùng có quyền gửi khiếu nại đến
+                    địa chỉ website https://Công ty Satra Centre Mall.com hoặc thông qua Ứng dụng di động của Công ty
+                    LOTTE YOUNG PLAZA Vietnam. Khi tiếp nhận những phản hồi này, chúng tôi sẽ xác nhận lại thông tin;
+                    trường hợp đúng như phản ánh của người dùng, tùy theo mức độ, Công ty LOTTE YOUNG PLAZA Việt Nam sẽ
+                    có những biện pháp xử lý kịp thời.
                 </span>
                 <br />
                 <br />
