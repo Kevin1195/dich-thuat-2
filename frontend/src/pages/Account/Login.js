@@ -80,7 +80,7 @@ function Login(props) {
                     </select>
                 </div> */}
                 <div className="img-logo flex items-center justify-center pb-8">
-                    <img src={logoTitle} alt="" className={cx('banner-img')} />
+                    <img src="/logo.svg" alt="" className={cx('banner-img')} />
                 </div>
                 <div className={cx('form-group')}>
                     <img src={iconUser} alt="Icon User" className={cx('icon-left')} />

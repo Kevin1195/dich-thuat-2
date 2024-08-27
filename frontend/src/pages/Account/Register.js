@@ -90,7 +90,7 @@ function Register(props) {
             <div className={cx('side-content')}>
                 {/* <h3 className={cx('title')}>{t('content.login.dangKy')}</h3> */}
                 <div className="img-logo flex items-center justify-center pb-8 mt-32">
-                    <img src={logoTitle} alt="" className={cx('banner-img')} />
+                    <img src="/logo.svg" alt="" className={cx('banner-img')} />
                 </div>
                 <label htmlFor="Label" className="text-xl text-center pb-4 leading-10 text-black">
                     {t('content.register.luuY')}

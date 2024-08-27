@@ -45,7 +45,7 @@ import DetailChat from '../pages/My/DetailChat';
 
 // Public Router
 
-let defaultTitle = 'Dịch thuật Công ty  Osaka Station City';
+let defaultTitle = 'LOTTE YOUNG PLAZA';
 
 const publicRoutes = [
     // Trang chủ

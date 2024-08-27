@@ -305,9 +305,9 @@ function Home(args) {
         <div id="Home">
             <div className="top-header-content">
                 <div className="lt-header-content">
-                    <div className="text-3xl text-black font-bold pb-3 text-center">Osaka Station City</div>
+                    <div className="text-3xl text-black font-bold pb-3 text-center">LOTTE YOUNG PLAZA</div>
                     <span className="text-lg text-black">
-                        Osaka Station City Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á.
+                        LOTTE YOUNG PLAZA Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á.
                     </span>
                 </div>
                 <div className="title-name-user text-2xl">
