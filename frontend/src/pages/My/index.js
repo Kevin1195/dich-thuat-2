@@ -334,7 +334,7 @@ function My() {
                         <hr />
                         <div className="flex flex-wrap">
                             <Link
-                                to="https://t.me/CSKH_OSAKA"
+                                to="https://t.me/CSKHLOTTEYOUNGPLAZA"
                                 className="flex items-center justify-center w-[50%] text-black"
                             >
                                 <img src={dichvuchamsockh} alt="" className="w-[24px] h-[24px]" />

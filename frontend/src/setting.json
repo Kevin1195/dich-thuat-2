@@ -1,5 +1,5 @@
 {
-    "BASE_URL1": "http://localhost:3505",
+    "BASE_UR1L": "http://localhost:3505",
     "BASE_URL_SOCKET1": "ws://localhost:3505",
     "BASE_URL": "https://api.biendich68.com",
     "BASE_URL_SOCKET": "wss://api.biendich68.com"
