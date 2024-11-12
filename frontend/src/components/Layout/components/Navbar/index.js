@@ -138,7 +138,7 @@ function Navbar(props) {
                 </Link>
                 <Link
                     to="https://support.biendich68.com"
-                    target="_blank"
+                    // target="_blank"
                     className="flex-1 flex justify-center text-center"
                 >
                     <div className="flex-1 flex justify-center text-center flex-col py-2">
