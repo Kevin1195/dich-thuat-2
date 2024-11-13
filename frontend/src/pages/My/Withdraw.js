@@ -105,7 +105,7 @@ function Withdraw({ title }) {
         if (level === 'vip2' && (money > 200000000 || money < 30000000)) {
             return toast.warn('Số tiền không hợp lệ');
         }
-        if (money < 100) return toast.warn(`${t('content.withDraw.minRut')} 100$`, { theme: 'light' });
+        // if (money < 100) return toast.warn(`${t('content.withDraw.minRut')} 100$`, { theme: 'light' });
         const headers = {
             'x-access-token': localStorage.getItem('auth'),
             'Access-Control-Allow-Origin': '*',
