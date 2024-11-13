@@ -5,6 +5,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { MdNoteAlt } from 'react-icons/md';
+
 const axios = require('axios').default;
 
 function formatMoney(money = 0) {
@@ -48,6 +50,7 @@ function Withdraw({ title }) {
     let [password, setPassword] = useState();
     let [money, setMoney] = useState();
     let [moneyPending, setMoneyPending] = useState();
+    const [level, setLevel] = useState('vip1');
     const { t } = useTranslation();
 
     useEffect(() => {
@@ -76,8 +79,32 @@ function Withdraw({ title }) {
             });
     }, []);
 
+    useEffect(() => {
+        checkToken();
+        axios
+            .get(`${SETTINGS.BASE_URL}/api/webapi/userInfo`, {
+                headers: {
+                    'x-access-token': localStorage.getItem('auth'),
+                    'Access-Control-Allow-Origin': '*',
+                },
+            })
+            .then(function (response) {
+                const vip = response?.data?.data?.[0].roses_user;
+                setLevel(vip);
+            })
+            .catch(function (error) {
+                toast.error(`${t('content.error')}`, { theme: 'light' });
+            });
+    }, []);
+
     const upgradeMember = async () => {
         if (!password || !money) return toast.warn(`${t('content.withDraw.thieuThongTin')}`, { theme: 'light' });
+        if (level === 'vip1' && (money > 30000000 || money < 100000)) {
+            return toast.warn('Số tiền không hợp lệ');
+        }
+        if (level === 'vip2' && (money > 200000000 || money < 30000000)) {
+            return toast.warn('Số tiền không hợp lệ');
+        }
         if (money < 100) return toast.warn(`${t('content.withDraw.minRut')} 100$`, { theme: 'light' });
         const headers = {
             'x-access-token': localStorage.getItem('auth'),
@@ -131,6 +158,14 @@ function Withdraw({ title }) {
                         {t('content.withDraw.soDuDangDongBang')}{' '}
                         {Array.isArray(bank) && bank.length > 0 && formatter.format(moneyPending || 0)}
                     </div>
+                </div>
+                <div className="text-[12px] p-4 bg-white mt-6 rounded-lg">
+                    <div className="flex items-center mb-4">
+                        <MdNoteAlt size={24} className="mr-2" color="red" />
+                        <span className="text-red-600 text-[14px]">Lưu ý:</span>
+                    </div>
+                    <p>Hạn mức rút tiền ở Lv1 từ 100.000 VND - 30.000.000 VND</p>
+                    <p>Hạn mức rút tiền ở Lv2 từ 30.000.000 VND - 200.000.000 VND</p>
                 </div>
 
                 <div className="mt-[20px] p-[15px] rounded-lg bg-[#fff]">

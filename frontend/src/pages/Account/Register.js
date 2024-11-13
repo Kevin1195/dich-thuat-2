@@ -89,10 +89,10 @@ function Register(props) {
         <Account type="Đăng ký">
             <div className={cx('side-content')}>
                 {/* <h3 className={cx('title')}>{t('content.login.dangKy')}</h3> */}
-                <div className="img-logo flex items-center justify-center pb-8 mt-32">
-                    <img src="/logo.svg" alt="" className={cx('banner-img')} />
+                <div className="flex items-center justify-center pb-0 mt-12 img-logo">
+                    <img src="/logo2.png" alt="" className="w-[200px]" />
                 </div>
-                <label htmlFor="Label" className="text-xl text-center pb-4 leading-10 text-black">
+                <label htmlFor="Label" className="pb-4 text-xl leading-10 text-center text-black">
                     {t('content.register.luuY')}
                 </label>
                 <div className={cx('form-group')}>

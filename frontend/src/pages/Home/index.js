@@ -1,52 +1,50 @@
-import classNames from 'classnames/bind';
-import styles from './Home.module.scss';
-
-import Slider from '../../components/Slider';
-import { Link } from 'react-router-dom';
-import ListHome from './ListHome';
-import { useEffect, useState, useRef } from 'react';
-import SETTINGS from '../../setting.json';
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBullhorn } from '@fortawesome/free-solid-svg-icons';
 import './Home.css';
-import avtIcon from '../../assets/images/avatar.png';
-import viLoiNhuan from '../../assets/images/vi-loi-nhuan.png';
-import napNhanh from '../../assets/images/naptien.png';
-import rutNhanh from '../../assets/images/rut-nhanh.png';
-import hopQua from '../../assets/images/vong-quay-may-man.png';
-import crocs from '../../assets/images/new/1.CROCS.PNG';
-import supersport from '../../assets/images/new/2.SUPPERSPORTS.png';
-import fila from '../../assets/images/new/3.FILA.jpg';
-import skechers from '../../assets/images/new/4.SKECHERS.jpeg';
-import columbia from '../../assets/images/new/5.COLUMBIA.jpeg';
-import dyson from '../../assets/images/new/6.DYSON.jpg';
 
-import congchung from '../../assets/images/new/congchung.jpg';
-import locknlocklv2 from '../../assets/images/new/LOCKNLOCKLV2.jpg';
-import shiseido from '../../assets/images/new/SHISEIDO.jpg';
-import thebodyshop from '../../assets/images/new/TheBodyShop.jpg';
-import doji from '../../assets/images/new/DOJI.jpg';
-import locknlocklv6 from '../../assets/images/new/LocknLocklv6.jpg';
+import { ToastContainer, toast } from 'react-toastify';
+import { useEffect, useRef, useState } from 'react';
 
-import UNIQLO from '../../assets/images/new/LV1 TÊN ( UNIQLO ).webp';
 import ABCMART from '../../assets/images/new/LV2 TÊN ( ABCMART ).webp';
 import CARTERSVN from '../../assets/images/new/LV3 TÊN ( Cartersvn ).webp';
-import VIINRIICGALERIES from '../../assets/images/new/LV4 TÊN ( ViinRiicGaleries ).webp';
-import VALENTINO from '../../assets/images/new/LV5 ( VALENTINO ).webp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import GLAMOURISTA from '../../assets/images/new/LV6 ( GLAMOURISTA ).webp';
-
-import khoa from '../../assets/images/khoa.png';
-import vechungta from '../../assets/images/vechungta.png';
-import mota from '../../assets/images/mota.png';
-import taichinh from '../../assets/images/taichinh.png';
-import vanhoadoanhnghiep from '../../assets/images/vanhoadoanhnghiep.png';
-import dieukien from '../../assets/images/dieukien.png';
-import mauthuthap from '../../assets/images/mauthuthap.png';
-import phanchianhom from '../../assets/images/phanchianhom.png';
+import { Link } from 'react-router-dom';
+import ListHome from './ListHome';
+import SETTINGS from '../../setting.json';
+import Slider from '../../components/Slider';
+import UNIQLO from '../../assets/images/new/LV1 TÊN ( UNIQLO ).webp';
+import VALENTINO from '../../assets/images/new/LV5 ( VALENTINO ).webp';
+import VIINRIICGALERIES from '../../assets/images/new/LV4 TÊN ( ViinRiicGaleries ).webp';
+import avtIcon from '../../assets/images/avatar.png';
 import chinhsachcanhan from '../../assets/images/chinhsachcanhan.png';
+import classNames from 'classnames/bind';
+import columbia from '../../assets/images/new/5.COLUMBIA.jpeg';
+import congchung from '../../assets/images/new/congchung.jpg';
+import crocs from '../../assets/images/new/1.CROCS.PNG';
+import dieukien from '../../assets/images/dieukien.png';
+import doji from '../../assets/images/new/DOJI.jpg';
+import dyson from '../../assets/images/new/6.DYSON.jpg';
+import { faBullhorn } from '@fortawesome/free-solid-svg-icons';
+import fila from '../../assets/images/new/3.FILA.jpg';
+import hopQua from '../../assets/images/vong-quay-may-man.png';
+import khoa from '../../assets/images/khoa.png';
+import locknlocklv2 from '../../assets/images/new/LOCKNLOCKLV2.jpg';
+import locknlocklv6 from '../../assets/images/new/LocknLocklv6.jpg';
+import mauthuthap from '../../assets/images/mauthuthap.png';
+import mota from '../../assets/images/mota.png';
+import napNhanh from '../../assets/images/naptien.png';
+import phanchianhom from '../../assets/images/phanchianhom.png';
+import rutNhanh from '../../assets/images/rut-nhanh.png';
+import shiseido from '../../assets/images/new/SHISEIDO.jpg';
+import skechers from '../../assets/images/new/4.SKECHERS.jpeg';
+import styles from './Home.module.scss';
+import supersport from '../../assets/images/new/2.SUPPERSPORTS.png';
+import taichinh from '../../assets/images/taichinh.png';
+import thebodyshop from '../../assets/images/new/TheBodyShop.jpg';
 import { useTranslation } from 'react-i18next';
+import vanhoadoanhnghiep from '../../assets/images/vanhoadoanhnghiep.png';
+import vechungta from '../../assets/images/vechungta.png';
+import viLoiNhuan from '../../assets/images/vi-loi-nhuan.png';
 
 const axios = require('axios').default;
 
@@ -305,9 +303,9 @@ function Home(args) {
         <div id="Home">
             <div className="top-header-content">
                 <div className="lt-header-content">
-                    <div className="text-3xl text-black font-bold pb-3 text-center">LOTTE YOUNG PLAZA</div>
+                    <div className="text-3xl text-black font-bold pb-3 text-center">COEX MALL</div>
                     <span className="text-lg text-black">
-                        LOTTE YOUNG PLAZA Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á.
+                        COEX MALL Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á.
                     </span>
                 </div>
                 <div className="title-name-user text-2xl">

@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
+
 import { useTranslation } from 'react-i18next';
+
 function ChinhSachBM() {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -18,13 +20,12 @@ function ChinhSachBM() {
                 <br />
                 <span>
                     Bản cập nhật ngày: 31/8/2022 Chính sách bảo mật thông tin này (“Chính Sách”) được sử dụng với mục
-                    đích giúp người dùng hiểu rõ những thông tin mà Công ty TNHH Công ty LOTTE YOUNG PLAZA Việt Nam (Sau
-                    đây gọi là “Công ty LOTTE YOUNG PLAZA Vietnam” hoặc “chúng tôi”) thu thập và đảm bảo an toàn thông
-                    tin cá nhân cho người dùng khi truy cập và/hoặc sử dụng ứng dụng di động của công ty TNHH Công ty
-                    LOTTE YOUNG PLAZA Việt Nam (“Ứng dụng điện thoại của Công ty LOTTE YOUNG PLAZA Vietnam”). Người dùng
-                    có trách nhiệm thông báo kịp thời cho chúng tôi về những hành vi sử dụng trái phép, lạm dụng, vi
-                    phạm bảo mật của bên thứ ba về việc sử dụng Ứng dụng điện thoại của Công ty LOTTE YOUNG PLAZA
-                    Vietnam để có biện pháp giải quyết phù hợp.
+                    đích giúp người dùng hiểu rõ những thông tin mà Công ty TNHH Công ty COEX MALL Việt Nam (Sau đây gọi
+                    là “Công ty COEX MALL Vietnam” hoặc “chúng tôi”) thu thập và đảm bảo an toàn thông tin cá nhân cho
+                    người dùng khi truy cập và/hoặc sử dụng ứng dụng di động của công ty TNHH Công ty COEX MALL Việt Nam
+                    (“Ứng dụng điện thoại của Công ty COEX MALL Vietnam”). Người dùng có trách nhiệm thông báo kịp thời
+                    cho chúng tôi về những hành vi sử dụng trái phép, lạm dụng, vi phạm bảo mật của bên thứ ba về việc
+                    sử dụng Ứng dụng điện thoại của Công ty COEX MALL Vietnam để có biện pháp giải quyết phù hợp.
                 </span>
                 <br />
                 <br />
@@ -33,9 +34,9 @@ function ChinhSachBM() {
                 </span>
                 <br />
                 <span>
-                    Người dùng khi sử dụng Ứng dụng điện thoại của Công ty LOTTE YOUNG PLAZA Vietnam có thể được yêu cầu
-                    cung cấp các thông tin như: Họ tên, email, số điện thoại, mật khẩu đăng nhập và các thông tin khác
-                    khi đăng ký tài khoản để chúng tôi có thể định danh, xác minh thông tin, hỗ trợ, liên hệ và trao đổi
+                    Người dùng khi sử dụng Ứng dụng điện thoại của Công ty COEX MALL Vietnam có thể được yêu cầu cung
+                    cấp các thông tin như: Họ tên, email, số điện thoại, mật khẩu đăng nhập và các thông tin khác khi
+                    đăng ký tài khoản để chúng tôi có thể định danh, xác minh thông tin, hỗ trợ, liên hệ và trao đổi
                     thông tin với người dùng trong quá trình cung cấp dịch vụ. Theo yêu cầu của chúng tôi, người dùng
                     cần cam kết rằng các thông tin cung cấp cho ứng dụng là đúng, chính xác và đầy đủ với những nội dung
                     tại thời điểm được yêu cầu. Khi đồng ý cung cấp những thông tin đã nêu trên thì chúng tôi hiểu rằng
@@ -62,21 +63,21 @@ function ChinhSachBM() {
                 <br />
                 <span>
                     • Để gửi đến người dùng các thông tin về chương trình khuyến mại, hoạt động, sự kiện đang và sắp
-                    diễn ra, nghiên cứu, khảo sát của Công ty LOTTE YOUNG PLAZA Vietnam và/ hoặc bên liên kết và/ hoặc
-                    đối tác của chúng tôi qua hình thức email hoặc tin nhắn văn bản, thông báo trên Ứng dụng.
+                    diễn ra, nghiên cứu, khảo sát của Công ty COEX MALL Vietnam và/ hoặc bên liên kết và/ hoặc đối tác
+                    của chúng tôi qua hình thức email hoặc tin nhắn văn bản, thông báo trên Ứng dụng.
                 </span>
                 <br />
                 <span>• Bất kỳ mục đích nào mà đã được người dùng đồng ý.</span>
                 <br />
                 <span>
-                    Công ty LOTTE YOUNG PLAZA Việt Nam có trách nhiệm hợp tác cung cấp thông tin cá nhân của người dùng
-                    khi có yêu cầu từ cơ quan Nhà nước có thẩm quyền hoặc các trường hợp khác theo quy định của pháp
-                    luật. Để thực hiện các mục đích nêu trên, chúng tôi sẽ xem xét chia sẻ thông tin với các công ty đối
-                    tác của Công ty LOTTE YOUNG PLAZA Vietnam. Thông tin có thể được chia sẻ cho bên thứ ba mà chúng tôi
-                    hợp tác để phát triển Ứng dụng di động của Công ty THISO MALL SALA Việt Nam. Tuy nhiên, trong trường
-                    hợp này, chúng tôi sẽ cố gắng để đảm bảo người nhận không thể lợi dụng thông tin của người dùng để
-                    thực hiện các mục đích vượt quá phạm vi sử dụng mà người dùng đã cho phép, chúng tôi cũng sẽ đảm bảo
-                    họ sẽ không sử dụng những thông tin này vào những mục đích trái phép
+                    Công ty COEX MALL Việt Nam có trách nhiệm hợp tác cung cấp thông tin cá nhân của người dùng khi có
+                    yêu cầu từ cơ quan Nhà nước có thẩm quyền hoặc các trường hợp khác theo quy định của pháp luật. Để
+                    thực hiện các mục đích nêu trên, chúng tôi sẽ xem xét chia sẻ thông tin với các công ty đối tác của
+                    Công ty COEX MALL Vietnam. Thông tin có thể được chia sẻ cho bên thứ ba mà chúng tôi hợp tác để phát
+                    triển Ứng dụng di động của Công ty THISO MALL SALA Việt Nam. Tuy nhiên, trong trường hợp này, chúng
+                    tôi sẽ cố gắng để đảm bảo người nhận không thể lợi dụng thông tin của người dùng để thực hiện các
+                    mục đích vượt quá phạm vi sử dụng mà người dùng đã cho phép, chúng tôi cũng sẽ đảm bảo họ sẽ không
+                    sử dụng những thông tin này vào những mục đích trái phép
                 </span>
                 <br />
                 <br />
@@ -87,15 +88,14 @@ function ChinhSachBM() {
                 <span>
                     Dữ liệu cá nhân của người dùng sẽ được lưu trữ cho đến khi có yêu cầu hủy bỏ theo quy định pháp luật
                     hoặc bởi người dùng. Còn lại trong mọi trường hợp thông tin cá nhân của người dùng sẽ được bảo mật
-                    trên máy chủ của Công ty LOTTE YOUNG PLAZA MALL Vietnam và máy chủ của Chương trình Khách hàng Thân
-                    thiết Công ty LOTTE YOUNG PLAZA MALL Vietnam. Người dùng có quyền sử dụng các dịch vụ và tiện ích
-                    đươc cung cấp bởi Ứng dụng di động của Công ty LOTTE YOUNG PLAZA Vietnam, thay đổi, cập nhật, xóa bỏ
-                    thông tin cá nhân đã cung cấp trên hệ thống dữ liệu của Ứng dụng di động của Công ty LOTTE YOUNG
-                    PLAZA City Vietnam bằng cách đăng nhập vào tài khoản cá nhân. Người dùng có quyền gửi khiếu nại đến
-                    địa chỉ website https://Công ty Satra Centre Mall.com hoặc thông qua Ứng dụng di động của Công ty
-                    LOTTE YOUNG PLAZA Vietnam. Khi tiếp nhận những phản hồi này, chúng tôi sẽ xác nhận lại thông tin;
-                    trường hợp đúng như phản ánh của người dùng, tùy theo mức độ, Công ty LOTTE YOUNG PLAZA Việt Nam sẽ
-                    có những biện pháp xử lý kịp thời.
+                    trên máy chủ của Công ty COEX MALL MALL Vietnam và máy chủ của Chương trình Khách hàng Thân thiết
+                    Công ty COEX MALL MALL Vietnam. Người dùng có quyền sử dụng các dịch vụ và tiện ích đươc cung cấp
+                    bởi Ứng dụng di động của Công ty COEX MALL Vietnam, thay đổi, cập nhật, xóa bỏ thông tin cá nhân đã
+                    cung cấp trên hệ thống dữ liệu của Ứng dụng di động của Công ty LOTTE YOUNG PLAZA City Vietnam bằng
+                    cách đăng nhập vào tài khoản cá nhân. Người dùng có quyền gửi khiếu nại đến địa chỉ website
+                    https://Công ty Satra Centre Mall.com hoặc thông qua Ứng dụng di động của Công ty COEX MALL Vietnam.
+                    Khi tiếp nhận những phản hồi này, chúng tôi sẽ xác nhận lại thông tin; trường hợp đúng như phản ánh
+                    của người dùng, tùy theo mức độ, Công ty COEX MALL Việt Nam sẽ có những biện pháp xử lý kịp thời.
                 </span>
                 <br />
                 <br />
@@ -104,23 +104,23 @@ function ChinhSachBM() {
                 </span>
                 <br />
                 <span>
-                    Ứng dụng điện thoại của Công ty LOTTE YOUNG PLAZA Vietnam có thể chứa đường liên kết đến các trang
-                    web, ứng dụng của bên thứ ba và dịch vụ trực tuyến không do Công ty THISO MALL SALA Vietnam sở hữu
-                    hoặc kiểm soát. Công ty LOTTE YOUNG PLAZA Vietnam không kiểm soát và không có trách nhiệm đối với
-                    những trang web và ứng dụng trực tuyến này. Hãy lưu ý khi rời khỏi Ứng dụng di động của Công ty
-                    LOTTE YOUNG PLAZA. Người dùng được khuyến nghị đọc kỹ các điều khoản và chính sách của từng trang
-                    web, ứng dụng và dịch vụ trực tuyến của bên thứ ba mà bạn truy cập.
+                    Ứng dụng điện thoại của Công ty COEX MALL Vietnam có thể chứa đường liên kết đến các trang web, ứng
+                    dụng của bên thứ ba và dịch vụ trực tuyến không do Công ty THISO MALL SALA Vietnam sở hữu hoặc kiểm
+                    soát. Công ty COEX MALL Vietnam không kiểm soát và không có trách nhiệm đối với những trang web và
+                    ứng dụng trực tuyến này. Hãy lưu ý khi rời khỏi Ứng dụng di động của Công ty COEX MALL. Người dùng
+                    được khuyến nghị đọc kỹ các điều khoản và chính sách của từng trang web, ứng dụng và dịch vụ trực
+                    tuyến của bên thứ ba mà bạn truy cập.
                 </span>
                 <br />
                 <span>4. Trò chơi ngắn</span>
                 <br />
                 <br />
                 <span>
-                    - Ứng dụng điện thoại của Công ty LOTTE YOUNG PLAZA Vietnam có các trò chơi ngắn bao gồm Lucky
-                    wheel, Quiz game và Hado. Đây là các trò chơi ngắn được sở hữu và phát hành bởi từng trung tâm
-                    thương mại và mỗi trung tâm thương mại hoàn toàn chịu trách nhiệm giải quyết mọi khiếu nại của người
-                    dùng có liên quan đến trò chơi ngắn được phát hành. Tất cả thông tin khách hàng cung cấp trong các
-                    trò chơi ngắn sẽ được tuân thủ theo chính sách bảo mật thông tin này.
+                    - Ứng dụng điện thoại của Công ty COEX MALL Vietnam có các trò chơi ngắn bao gồm Lucky wheel, Quiz
+                    game và Hado. Đây là các trò chơi ngắn được sở hữu và phát hành bởi từng trung tâm thương mại và mỗi
+                    trung tâm thương mại hoàn toàn chịu trách nhiệm giải quyết mọi khiếu nại của người dùng có liên quan
+                    đến trò chơi ngắn được phát hành. Tất cả thông tin khách hàng cung cấp trong các trò chơi ngắn sẽ
+                    được tuân thủ theo chính sách bảo mật thông tin này.
                 </span>
                 <br />
                 <span>
@@ -135,14 +135,14 @@ function ChinhSachBM() {
                     <b>5. Địa chỉ của đơn vị thu thập và quản lý thông tin cá nhân</b>
                 </span>
                 <br />
-                <span>CÔNG TY TNHH LOTTE YOUNG PLAZA VIỆT NAM</span>
+                <span>CÔNG TY TNHH COEX MALL VIỆT NAM</span>
                 <br />
-                <span>Địa chỉ 67, Namdaemun-ro, Jung-gu, Seoul</span>
+                <span>Địa chỉ: 513 Yeongdong-daero, Gangnam District, Seoul, Hàn Quốc</span>
                 <br />
                 <br />
-                <span>Email: nbs@Công ty LOTTE YOUNG PLAZA-vn.com</span>
+                <span>Email: nbs@Công ty COEX MALL-vn.com</span>
                 <br />
-                <span>Công ty LOTTE YOUNG PLAZA VIETNAM CO., LTD</span>
+                <span>Công ty COEX MALL VIETNAM CO., LTD</span>
                 <br />
                 <br />
                 <span>
@@ -150,22 +150,22 @@ function ChinhSachBM() {
                 </span>
                 <br />
                 <span>
-                    Thông tin cá nhân của khách hàng trên Ứng dụng di động Công ty LOTTE YOUNG PLAZA Vietnam được cam
-                    kết bảo mật tuyệt đối theo chính sách bảo vệ thông tin cá nhân của ứng dụng. Việc thu thập và sử
-                    dụng thông tin của mỗi người dùng ngoài mục đích đã nêu tại chính sách bảo mật thông tin này chỉ
-                    được thực hiện khi có sự đồng ý của người dùng đó, trừ những trường hợp pháp luật có quy định khác.
-                    Không sử dụng, không chuyển giao, cung cấp hay tiết lộ cho bên thứ 3 nào về thông tin cá nhân của
-                    người dùng khi không có sự cho phép đồng ý từ người dùng ngoại trừ trường hợp phải thực hiện theo
-                    yêu cầu của các cơ quan Nhà nước có thẩm quyền theo quy định của pháp luật hoặc đã được người dùng
-                    đồng ý dựa trên những điều khoản trong chính sách này. Trong trường hợp máy chủ lưu trữ thông tin bị
-                    hacker tấn công dẫn đến mất mát dữ liệu cá nhân người dùng, Công ty THISO MALL SALA Vietnam sẽ có
-                    trách nhiệm thông báo vụ việc cho cơ quan chức năng điều tra xử lý kịp thời và thông báo cho người
-                    dùng được biết. Để Ban quản lý Công ty LOTTE YOUNG PLAZA Việt Nam có thể giải quyết các yêu
-                    cầu/khiếu nại của các cá nhân/tổ chức thì khi liên hệ với chúng tôi, người dùng vui lòng cung cấp
-                    đầy đủ thông tin cá nhân có liên quan như: Họ và tên, địa chỉ liên lạc, điện thoại… và chịu trách
-                    nhiệm về những thông tin trên. Ban quản lý Công ty LOTTE YOUNG PLAZA Vietnam không chịu trách nhiệm
-                    cũng như không giải quyết mọi khiếu nại có liên quan đến quyền lợi của khách hàng đó nếu xét thấy
-                    tất cả thông tin cá nhân của người dùng đó cung cấp khi liên hệ ban đầu là không chính xác.
+                    Thông tin cá nhân của khách hàng trên Ứng dụng di động Công ty COEX MALL Vietnam được cam kết bảo
+                    mật tuyệt đối theo chính sách bảo vệ thông tin cá nhân của ứng dụng. Việc thu thập và sử dụng thông
+                    tin của mỗi người dùng ngoài mục đích đã nêu tại chính sách bảo mật thông tin này chỉ được thực hiện
+                    khi có sự đồng ý của người dùng đó, trừ những trường hợp pháp luật có quy định khác. Không sử dụng,
+                    không chuyển giao, cung cấp hay tiết lộ cho bên thứ 3 nào về thông tin cá nhân của người dùng khi
+                    không có sự cho phép đồng ý từ người dùng ngoại trừ trường hợp phải thực hiện theo yêu cầu của các
+                    cơ quan Nhà nước có thẩm quyền theo quy định của pháp luật hoặc đã được người dùng đồng ý dựa trên
+                    những điều khoản trong chính sách này. Trong trường hợp máy chủ lưu trữ thông tin bị hacker tấn công
+                    dẫn đến mất mát dữ liệu cá nhân người dùng, Công ty THISO MALL SALA Vietnam sẽ có trách nhiệm thông
+                    báo vụ việc cho cơ quan chức năng điều tra xử lý kịp thời và thông báo cho người dùng được biết. Để
+                    Ban quản lý Công ty COEX MALL Việt Nam có thể giải quyết các yêu cầu/khiếu nại của các cá nhân/tổ
+                    chức thì khi liên hệ với chúng tôi, người dùng vui lòng cung cấp đầy đủ thông tin cá nhân có liên
+                    quan như: Họ và tên, địa chỉ liên lạc, điện thoại… và chịu trách nhiệm về những thông tin trên. Ban
+                    quản lý Công ty COEX MALL Vietnam không chịu trách nhiệm cũng như không giải quyết mọi khiếu nại có
+                    liên quan đến quyền lợi của khách hàng đó nếu xét thấy tất cả thông tin cá nhân của người dùng đó
+                    cung cấp khi liên hệ ban đầu là không chính xác.
                 </span>
                 <br />
                 <br />
