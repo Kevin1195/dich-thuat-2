@@ -303,14 +303,14 @@ function Home(args) {
         <div id="Home">
             <div className="top-header-content">
                 <div className="lt-header-content">
-                    <div className="text-3xl text-black font-bold pb-3 text-center">COEX MALL</div>
+                    <div className="pb-3 text-3xl font-bold text-center text-black">COEX MALL</div>
                     <span className="text-lg text-black">
-                        COEX MALL Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á.
+                        COEX MALL Việt Nam - nhà bán lẻ hàng đầu của Hàn Quốc và châu Á.
                     </span>
                 </div>
-                <div className="title-name-user text-2xl">
-                    <div className="name-user-home font-bold">{user.userBank?.name_u_bank}</div>
-                    <div className="name-user-home font-bold pb-6">{user.userBank?.username}</div>
+                <div className="text-2xl title-name-user">
+                    <div className="font-bold name-user-home">{user.userBank?.name_u_bank}</div>
+                    <div className="pb-6 font-bold name-user-home">{user.userBank?.username}</div>
                     <div
                         className="money-total"
                         style={{ backgroundColor: '#ff5f3e', borderRadius: '10px', padding: '0px 10px' }}
@@ -327,36 +327,36 @@ function Home(args) {
                 <Slider />
             </section>
 
-            <div className="imlist mt-2">
+            <div className="mt-2 imlist">
                 {isHopQua ? (
                     <Link to="/vong-quay-may-man" className="listub w-[72px] pt-[16px]">
                         <img src={hopQua} alt="Hộp quà may mắn" className="w-24" />
-                        <span className="text-xl mt-3 text-black text-center">{t('content.home.vongQuayMayMan')}</span>
+                        <span className="mt-3 text-xl text-center text-black">{t('content.home.vongQuayMayMan')}</span>
                     </Link>
                 ) : (
                     <div className="listub w-[72px] pt-[16px]" onClick={clickKhongDuocQuay}>
                         <img src={hopQua} alt="Hộp quà may mắn" className="w-24" />
-                        <span className="text-xl mt-3 text-black text-center">{t('content.home.vongQuayMayMan')}</span>
+                        <span className="mt-3 text-xl text-center text-black">{t('content.home.vongQuayMayMan')}</span>
                     </div>
                 )}
 
                 <div className="listub" onClick={chucNangDangPT}>
                     <img src={viLoiNhuan} alt={t('content.home.viLoiNhuan')} className="w-24" />
-                    <span className="text-xl mt-3 text-black text-center">{t('content.home.viLoiNhuan')}</span>
+                    <span className="mt-3 text-xl text-center text-black">{t('content.home.viLoiNhuan')}</span>
                 </div>
 
                 <Link to="/recharge" className="listub">
                     <img src={napNhanh} alt="Nạp nhanh" className="w-24" />
-                    <span className="text-xl mt-3 text-black text-center">{t('content.home.napNhanh')} </span>
+                    <span className="mt-3 text-xl text-center text-black">{t('content.home.napNhanh')} </span>
                 </Link>
 
                 <Link to="/withdraw" className="listub">
                     <img src={rutNhanh} alt="Rút nhanh" className="w-24" />
-                    <span className="text-xl mt-3 text-black text-center">{t('content.home.rutNhanh')} </span>
+                    <span className="mt-3 text-xl text-center text-black">{t('content.home.rutNhanh')} </span>
                 </Link>
             </div>
 
-            <h2 className="text-3xl mt-16 text-black font-bold">Hệ thống đối tác</h2>
+            <h2 className="mt-16 text-3xl font-bold text-black">Hệ thống đối tác</h2>
             <div className="goodcats">
                 {listMission.map((item, i) => {
                     return (
@@ -381,7 +381,7 @@ function Home(args) {
                                     <img src={item.icon} alt="" width={'200px'} className="h-[100%]" />
                                     <div className="bg-khoa w-[100%] h-[100%] flex flex-col items-center justify-center">
                                         <img src={khoa} alt="" />
-                                        <span className="text-white text-2xl font-bold">
+                                        <span className="text-2xl font-bold text-white">
                                             {t('content.home.choNangCap')}
                                         </span>
                                     </div>
@@ -398,14 +398,14 @@ function Home(args) {
                                     {t('content.home.hoaHong')}
                                     {item.rose}%
                                 </p>
-                                <p className="text-xl mt-4 ">{item.content} đơn</p>
+                                <p className="mt-4 text-xl ">{item.content} đơn</p>
                             </div>
                         </div>
                     );
                 })}
             </div>
 
-            <div className="ve-chung-ta flex flex-wrap pt-2">
+            <div className="flex flex-wrap pt-2 ve-chung-ta">
                 {gioithieu.map((item, i) => {
                     return (
                         <Link key={i} to={item.link} className="w-[25%] pl-2 pt-3 cursor-pointer">

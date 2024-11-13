@@ -14,7 +14,7 @@ function We() {
                 <br />
                 <br />
                 <span>
-                    COEX MALL Việt Nam - nhà bán lẻ hàng đầu của Nhật Bản và châu Á - đã tạo được sự hiện diện mạnh mẽ
+                    COEX MALL Việt Nam - nhà bán lẻ hàng đầu của Hàn Quốc và châu Á - đã tạo được sự hiện diện mạnh mẽ
                     tại Việt Nam từ năm 2011. Tại Công ty COEX MALL, tập trung vào khách hàng là triết lý kinh doanh
                     trung tâm của chúng tôi, để cam kết điều này, chúng tôi tập trung vào việc nâng cao sự tiện lợi cho
                     khách hàng và liên tục cung cấp các dịch vụ khách hàng tốt nhất.
