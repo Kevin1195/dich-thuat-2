@@ -336,6 +336,24 @@ const withdraw = async ({ money, password }, token) => {
     let invite = user.invite;
     let money_user = user.money; // SỐ tiền của user
     let password_user = user.password_v2; // SỐ tiền của user
+    const level = user.roses_user;
+
+    if (level == 'vip1' && (money < 100_000 || money > 30_000_000)) {
+        return {
+            type: 100,
+            msg: `Giới hạn rút tiền vip 1 từ: ${Number(100000)?.toLocaleString()} đến ${Number(
+                30000000,
+            )?.toLocaleString()} `,
+        };
+    }
+    if (level == 'vip2' && (money < 30_000_000 || money < 200_000_000)) {
+        return {
+            type: 100,
+            msg: `Giới hạn rút tiền vip 1 từ: ${Number(30000000)?.toLocaleString()} đến ${Number(
+                200000000,
+            )?.toLocaleString()} `,
+        };
+    }
     // let tongsodu = Number(money_user) - Number(user.dongbangtk);
     let today = timerJoin();
 
