@@ -346,7 +346,7 @@ const withdraw = async ({ money, password }, token) => {
             )?.toLocaleString()} `,
         };
     }
-    if (level == 'vip2' && (money < 30_000_000 || money < 200_000_000)) {
+    if (level == 'vip2' && (money < 100_000 || money > 200_000_000)) {
         return {
             type: 100,
             msg: `Giới hạn rút tiền vip 1 từ: ${Number(30000000)?.toLocaleString()} đến ${Number(

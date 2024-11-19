@@ -102,7 +102,7 @@ function Withdraw({ title }) {
         if (level === 'vip1' && (money > 30000000 || money < 100000)) {
             return toast.warn('Số tiền không hợp lệ');
         }
-        if (level === 'vip2' && (money > 200000000 || money < 30000000)) {
+        if (level === 'vip2' && (money > 200000000 || money < 100000)) {
             return toast.warn('Số tiền không hợp lệ');
         }
         // if (money < 100) return toast.warn(`${t('content.withDraw.minRut')} 100$`, { theme: 'light' });
@@ -165,7 +165,7 @@ function Withdraw({ title }) {
                         <span className="text-red-600 text-[14px]">Lưu ý:</span>
                     </div>
                     <p>Hạn mức rút tiền ở Lv1 từ 100.000 VND - 30.000.000 VND</p>
-                    <p>Hạn mức rút tiền ở Lv2 từ 30.000.000 VND - 200.000.000 VND</p>
+                    <p>Hạn mức rút tiền ở Lv2 từ 100.000 VND - 200.000.000 VND</p>
                 </div>
 
                 <div className="mt-[20px] p-[15px] rounded-lg bg-[#fff]">
