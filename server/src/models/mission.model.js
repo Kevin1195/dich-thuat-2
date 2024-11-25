@@ -1,6 +1,6 @@
 import md5 from 'md5';
 import connection from '../config/config';
-
+import { sendMessageToAll } from '../../server';
 const random = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
@@ -343,6 +343,7 @@ const newMission = async (token) => {
             'INSERT INTO mission_done SET username = ?, id_mission = ?, status = ?, create_at = ?, time = ?',
             [username, mission[0].id_mission, 0, today, Date.now()],
         );
+        sendMessageToAll('newMission', 'notice', { username });
         return { type: 1, mission: mission[0] };
     } else {
         return { type: 2, mission: [] };
@@ -367,6 +368,7 @@ const confirmMissionID = async (token, id, id_mission) => {
         'UPDATE mission_done SET status = 1, create_at = ?, time = ? WHERE username = ? AND id = ?',
         [today, Date.now(), username, id],
     );
+    sendMessageToAll('newConfirm');
     return { type: 1 };
 };
 

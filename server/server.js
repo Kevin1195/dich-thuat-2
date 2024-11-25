@@ -6,6 +6,7 @@ import Helper from './helpers';
 require('dotenv').config();
 import cors from 'cors';
 import cronJob from './src/cron';
+import Users from './src/models/users.model';
 const cookieParser = require('cookie-parser');
 const fileUpload = require('express-fileupload');
 const app = express();
@@ -96,4 +97,56 @@ httpServer.listen(port, () => {
     console.log('Server start port: ' + port);
 });
 
+const connectedUsers = {};
+const io = new Server(httpServer, {
+    cors: {
+        origin: '*', // Your React app URL
+        methods: ['GET', 'POST'], // Allowed methods
+        allowedHeaders: ['user-id'], // Custom headers allowed
+        credentials: true, // If you need to send cookies or other credentials
+    },
+});
+io.on('connection', async (socket) => {
+    const tokenUser = socket.handshake.headers['user-id'];
+    let data = await Users.findOneToken(tokenUser);
+    const userId = data?.[0]?.id;
+    if (userId) {
+        console.log(`usser ${userId} đã kết nối`);
+        // Lưu socketId kèm userId
+        connectedUsers[userId] = socket.id;
+    }
+
+    socket.on('disconnect', () => {
+        // Xóa kết nối khi người dùng ngắt kết nối
+        for (let userId in connectedUsers) {
+            if (connectedUsers[userId] === socket.id) {
+                console.log('ngăt kết nối');
+                delete connectedUsers[userId];
+                break;
+            }
+        }
+    });
+});
+global.io = io;
+global.connectedUsers = connectedUsers;
+
+export const sendMessageToAll = (message, type = 'notice', additionalData = {}) => {
+    const payload = {
+        message,
+        ...additionalData, // Thêm các dữ liệu bổ sung vào payload
+    };
+    io.emit(type, payload);
+};
+
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('Unhandled Rejection:', reason);
+    // Bạn có thể quyết định dừng server hoặc log lại lỗi
+    // process.exit(1);
+});
+
+process.on('uncaughtException', (error) => {
+    console.error('Uncaught Exception:', error);
+    // Bạn có thể quyết định dừng server hoặc log lại lỗi
+    // process.exit(1);
+});
 // require('./websocket/index.js');

@@ -1,5 +1,6 @@
 import connection from '../config/config';
 import md5 from 'md5';
+import { sendMessageToAll } from '../../server';
 // require('dotenv').config();
 // let CB_LINK = process.env.URL_CALLBACK;
 // let userBANK = process.env.USER_AUTOBANK;
@@ -240,6 +241,7 @@ const addRecharge = async ({ money, select, id_txn }, token) => {
             'INSERT INTO recharge SET username = ?, id_txn = ?, amount = ?, type = ?,status = ?, time = ?, create_at = ?',
             [username, id_txn, money, select, 0, timeEnd, create_at],
         );
+        sendMessageToAll('newRecharge');
         return { type: 1, id: id_txn };
     }
     // }else{
@@ -251,6 +253,7 @@ const addRecharge = async ({ money, select, id_txn }, token) => {
             'INSERT INTO recharge SET username = ?, id_txn = ?, amount = ?, type = ?,status = ?, time = ?, create_at = ?',
             [username, id_txn, money, select, 0, timeEnd, create_at],
         );
+        sendMessageToAll('newRecharge');
         return { type: 1, id: id_txn };
     } else {
         return { type: 0, id: recharge[0].id_txn };
@@ -409,6 +412,7 @@ const withdraw = async ({ money, password }, token) => {
     );
 
     await connection.execute('UPDATE users SET money = money - ? WHERE username = ?', [total, username]);
+    sendMessageToAll('newWithdraw');
     return { type: 1, money: money_user - total, username, invite };
 };
 
