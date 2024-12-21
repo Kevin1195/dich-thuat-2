@@ -233,9 +233,9 @@ const Member = (props) => {
       {edit && (
         <div>
           <div className="w-[100%] h-[100%] fixed top-0 left-0 z-50 bg-[rgba(0,0,0,.7)]"></div>
-          <div className="fixed w-[calc(100%-30px)] lg:w-[calc(50%-30px)] top-[2%] left-[-50%] right-[-50%] mx-auto bg-[#fff] rounded-lg z-[100]">
+          <div className="fixed w-[calc(100%-30px)] lg:w-[calc(50%-30px)] top-[2%] left-[-50%] right-[-50%] mx-auto bg-[#fff] rounded-lg z-[100]  overflow-auto">
             <div className="relative van-dialog__content">
-              <div className="px-[31px] py-[25px]">
+              <div className="px-[31px] py-[25px] max-h-[90dvh]">
                 <div>
                   <div className="form-group mb-[5px]">
                     <p className="text-left text-[#999]">Tài khoản</p>

@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 import './History.css';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Modal, ModalBody, ModalHeader } from 'reactstrap';
+import { FaStar, FaRegStar } from 'react-icons/fa6';
 const axios = require('axios').default;
 const cx = classNames.bind(styles);
 function formateT(params) {
@@ -73,6 +74,7 @@ function History({ title }) {
     const type = searchParams.get('type');
     let [type_mission, setType] = useState(type || 'all');
     let [mission, setMission] = useState([]);
+    const [star, setStar] = useState(1);
     const [isMatching, setIsMatching] = useState(false);
     const [contentMatching, setContentMatching] = useState('');
     const [missionSelected, setMissionSelected] = useState({});
@@ -123,7 +125,7 @@ function History({ title }) {
         axios
             .post(
                 `${SETTINGS.BASE_URL}/api/webapi/mission/confirm/id`,
-                { id, id_mission },
+                { id, id_mission, rate: star },
                 {
                     headers,
                 },
@@ -203,7 +205,7 @@ function History({ title }) {
                     </div>
                 </div>
             )}
-            <div className="header-order flex justify-between border-b-2">
+            <div className="flex justify-between border-b-2 header-order">
                 <div
                     onClick={() => setType('all')}
                     className={cx('history-progress', { 'px-[10px] py-[15px] text-[16px] font-medium': true })}
@@ -236,84 +238,202 @@ function History({ title }) {
             <div className="content px-[12px] py-[17px]">
                 <div className="list-items">
                     {mission.map((data, index) => {
-                        return (
-                            <div
-                                key={index}
-                                className="item-data relative p-[15px] mb-[15px]"
-                                style={{ boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px' }}
-                            >
-                                {data.status !== 0 && (
-                                    <img
-                                        className="absolute w-[94px] h-[25px] right-[-4px] top-[-4px]"
-                                        src={data.status === 2 ? successIcon : pendingIcon}
-                                        alt=""
-                                    />
-                                )}
-
-                                {/* <div className="by flex">
-                                    <img className="w-[19px] h-[19px]" src={ebayIconGuiHang} alt="Central Group" />
-                                    <span className="text-[#fff] text-xl ml-[5px]">
-                                        {t('content.history.tuCentral')}
-                                    </span>
-                                </div> */}
-                                <div className={cx('title', { 'text-[16px] py-[5px] font-semibold text-white': true })}>
-                                    {data.name_mission}
-                                </div>
-                                <div className="box-content">
-                                    <div className="flex">
-                                        <img className="w-[83px] h-[83px] rounded-lg" src={data.image} alt="" />
-
-                                        <div className="px-[15px] flex-1">
-                                            <div className="info flex justify-between flex-col">
-                                                <div className="">
-                                                    <p className="text-[#fff] text-xl">
-                                                        {t('content.history.giaTriDonHang')}
-                                                    </p>
-                                                    <p className="text-[#0dc253] font-bold text-3xl">
-                                                        + {formatMoney(data.price)}đ
-                                                    </p>
-                                                </div>
-                                                <div>
-                                                    <p className="text-[#fff] text-xl">
-                                                        {t('content.history.loiNhuan')}
-                                                    </p>
-                                                    <p className="text-[#ffa900] font-bold text-3xl">
-                                                        + {formatMoney(data.receive)}đ
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="id-order mt-[5px]">
-                                                <p className="text-[#fff] text-xl my-[2px]">
-                                                    {t('content.history.maDon')} {data.id_mission}
-                                                </p>
-                                            </div>
-                                            <div className="text-[#fff] text-xl my-[2px]">
-                                                {t('content.history.time')} {timerJoin2(data.time)}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="d-flex justify-content-between">
-                                    <div
-                                        className="flex cursor-pointer mt-4 bg-[#0dc253] w-[30%] px-4 py-2 items-center justify-center rounded-xl text-white"
-                                        onClick={() => {
-                                            setModalOne(true);
-                                            setMissionSelected(data);
-                                        }}
-                                    >
-                                        Xem chi tiết
-                                    </div>
-                                    {data.status === 0 && (
-                                        <div
-                                            className="flex cursor-pointer mt-4 bg-[#ff575c] w-[30%] px-4 py-2 items-center justify-center rounded-xl text-white"
-                                            onClick={() => confirmMission(data.id, data.id_mission)}
-                                        >
-                                            {t('content.confirmOrder.guiDonHang')}
-                                        </div>
+                        console.log(data);
+                        if (data?.status === 0) {
+                            return (
+                                <div
+                                    key={index}
+                                    className="item-data relative p-[15px] mb-[15px]"
+                                    style={{ boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px' }}
+                                >
+                                    {data.status !== 0 && (
+                                        <img
+                                            className="absolute w-[94px] h-[25px] right-[-4px] top-[-4px]"
+                                            src={data.status === 2 ? successIcon : pendingIcon}
+                                            alt=""
+                                        />
                                     )}
+
+                                    {/* <div className="flex by">
+                <img className="w-[19px] h-[19px]" src={ebayIconGuiHang} alt="Central Group" />
+                <span className="text-[#fff] text-xl ml-[5px]">
+                    {t('content.history.tuCentral')}
+                </span>
+            </div> */}
+                                    <div
+                                        className={cx('title', {
+                                            'text-[16px] py-[5px] font-semibold text-white': true,
+                                        })}
+                                    >
+                                        {data.name_mission}
+                                    </div>
+                                    <div className="box-content">
+                                        <div className="flex">
+                                            <img className="w-[83px] h-[83px] rounded-lg" src={data.image} alt="" />
+
+                                            <div className="px-[15px] flex-1">
+                                                <div className="flex flex-col justify-between info">
+                                                    <div className="">
+                                                        <p className="text-[#fff] text-xl">
+                                                            {t('content.history.giaTriDonHang')}
+                                                        </p>
+                                                        <p className="text-[#0dc253] font-bold text-3xl">
+                                                            + {formatMoney(data.price)}đ
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-[#fff] text-xl">
+                                                            {t('content.history.loiNhuan')}
+                                                        </p>
+                                                        <p className="text-[#ffa900] font-bold text-3xl">
+                                                            + {formatMoney(data.receive)}đ
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="id-order mt-[5px]">
+                                                    <p className="text-[#fff] text-xl my-[2px]">
+                                                        {t('content.history.maDon')} {data.id_mission}
+                                                    </p>
+                                                </div>
+                                                <div className="text-[#fff] text-xl my-[2px]">
+                                                    {t('content.history.time')} {timerJoin2(data.time)}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-center justify-around w-full">
+                                        <span className="text-[24px] text-white">Đánh giá:</span>
+
+                                        <div className="flex justify-center my-4">
+                                            {Array.from({ length: 5 }, (_, index) => (
+                                                <div key={index} onClick={() => setStar(index + 1)}>
+                                                    {star > index ? (
+                                                        <FaStar size={35} className="text-yellow-500 cursor-pointer" />
+                                                    ) : (
+                                                        <FaRegStar
+                                                            size={35}
+                                                            className="text-yellow-500 cursor-pointer"
+                                                        />
+                                                    )}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className="d-flex justify-content-between">
+                                        <div
+                                            className="flex cursor-pointer mt-4 bg-[#0dc253] w-[30%] px-4 py-2 items-center justify-center rounded-xl text-white"
+                                            onClick={() => {
+                                                setModalOne(true);
+                                                setMissionSelected(data);
+                                            }}
+                                        >
+                                            Xem chi tiết
+                                        </div>
+                                        {data.status === 0 && (
+                                            <div
+                                                className="flex cursor-pointer mt-4 bg-[#ff575c] w-[30%] px-4 py-2 items-center justify-center rounded-xl text-white"
+                                                onClick={() => confirmMission(data.id, data.id_mission)}
+                                            >
+                                                {t('content.confirmOrder.guiDonHang')}
+                                            </div>
+                                        )}
+                                    </div>
                                 </div>
-                            </div>
-                        );
+                            );
+                        } else {
+                            return (
+                                <div
+                                    key={index}
+                                    className="item-data relative p-[15px] mb-[15px]"
+                                    style={{ boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px' }}
+                                >
+                                    {data.status !== 0 && (
+                                        <img
+                                            className="absolute w-[94px] h-[25px] right-[-4px] top-[-4px]"
+                                            src={data.status === 2 ? successIcon : pendingIcon}
+                                            alt=""
+                                        />
+                                    )}
+
+                                    {/* <div className="flex by">
+                <img className="w-[19px] h-[19px]" src={ebayIconGuiHang} alt="Central Group" />
+                <span className="text-[#fff] text-xl ml-[5px]">
+                    {t('content.history.tuCentral')}
+                </span>
+            </div> */}
+                                    <div
+                                        className={cx('title', {
+                                            'text-[16px] py-[5px] font-semibold text-white': true,
+                                        })}
+                                    >
+                                        {data.name_mission}
+                                    </div>
+                                    <div className="box-content">
+                                        <div className="flex">
+                                            <img className="w-[83px] h-[83px] rounded-lg" src={data.image} alt="" />
+
+                                            <div className="px-[15px] flex-1">
+                                                <div className="flex flex-col justify-between info">
+                                                    <div className="">
+                                                        <p className="text-[#fff] text-xl">
+                                                            {t('content.history.giaTriDonHang')}
+                                                        </p>
+                                                        <p className="text-[#0dc253] font-bold text-3xl">
+                                                            + {formatMoney(data.price)}đ
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-[#fff] text-xl">
+                                                            {t('content.history.loiNhuan')}
+                                                        </p>
+                                                        <p className="text-[#ffa900] font-bold text-3xl">
+                                                            + {formatMoney(data.receive)}đ
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="id-order mt-[5px]">
+                                                    <p className="text-[#fff] text-xl my-[2px]">
+                                                        {t('content.history.maDon')} {data.id_mission}
+                                                    </p>
+                                                </div>
+                                                <div className="text-[#fff] text-xl my-[2px]">
+                                                    {t('content.history.time')} {timerJoin2(data.time)}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-center justify-around w-full">
+                                        <span className="text-[24px] text-white">Đánh giá:</span>
+
+                                        <div className="flex justify-center my-4">
+                                            {Array.from({ length: 5 }, (_, index) => (
+                                                <div>
+                                                    {data?.rate > index ? (
+                                                        <FaStar size={35} className="text-yellow-500 cursor-pointer" />
+                                                    ) : (
+                                                        <FaRegStar
+                                                            size={35}
+                                                            className="text-yellow-500 cursor-pointer"
+                                                        />
+                                                    )}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className="d-flex justify-content-between">
+                                        <div
+                                            className="flex cursor-pointer mt-4 bg-[#0dc253] w-[30%] px-4 py-2 items-center justify-center rounded-xl text-white"
+                                            onClick={() => {
+                                                setModalOne(true);
+                                                setMissionSelected(data);
+                                            }}
+                                        >
+                                            Xem chi tiết
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        }
                     })}
                 </div>
             </div>
