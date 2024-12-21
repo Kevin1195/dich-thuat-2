@@ -350,7 +350,7 @@ const newMission = async (token) => {
     }
 };
 
-const confirmMissionID = async (token, id, id_mission) => {
+const confirmMissionID = async (token, id, id_mission, rate) => {
     const { username, money } = await findOneToken(token);
     const [mission] = await connection.execute('SELECT * FROM mission WHERE id_mission = ?', [id_mission]);
     if (money < mission?.[0]?.price) {
@@ -365,8 +365,8 @@ const confirmMissionID = async (token, id, id_mission) => {
     ]);
     let today = timerJoin();
     await connection.execute(
-        'UPDATE mission_done SET status = 1, create_at = ?, time = ? WHERE username = ? AND id = ?',
-        [today, Date.now(), username, id],
+        'UPDATE mission_done SET status = 1, create_at = ?, time = ?, rate = ? WHERE username = ? AND id = ?',
+        [today, Date.now(), rate, username, id],
     );
     sendMessageToAll('newConfirm');
     return { type: 1 };

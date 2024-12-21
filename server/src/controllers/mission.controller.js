@@ -97,9 +97,15 @@ const confirmMission = async (req, res, next) => {
 
 const confirmMissionID = async (req, res, next) => {
     try {
-        let { id, id_mission } = req.body;
+        let { id, id_mission, rate } = req.body;
+        if (!rate) {
+            return res.status(200).json({
+                status: 'error',
+                message: 'Đánh gía không hợp lệ',
+            });
+        }
         let token = req.headers['x-access-token'];
-        let data = await Mission.confirmMissionID(token, id, id_mission);
+        let data = await Mission.confirmMissionID(token, id, id_mission, rate);
         return res.status(200).json({
             status: 'ok',
             data,
