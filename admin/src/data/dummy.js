@@ -1,22 +1,33 @@
-import React from "react";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import {
-  FiShoppingBag,
-  FiCreditCard,
-  FiStar,
-  FiShoppingCart,
-} from "react-icons/fi";
 import {
   BsBoxSeam,
+  BsChatLeft,
   BsCurrencyDollar,
   BsShield,
-  BsChatLeft,
 } from "react-icons/bs";
-import { IoMdContacts } from "react-icons/io";
-import { RiContactsLine } from "react-icons/ri";
-import { TiTick } from "react-icons/ti";
+import {
+  FiCreditCard,
+  FiShoppingBag,
+  FiShoppingCart,
+  FiStar,
+} from "react-icons/fi";
+
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import Bank from "../components/Bank";
+import Banner from "../components/Banner";
+import EditProduct from "../components/EditProduct";
 import { GrLocation } from "react-icons/gr";
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
+import { IoMdContacts } from "react-icons/io";
+import Level from "../components/Level";
+import ListOrderX from "../components/ListOrderX";
+import Member from "../components/Member";
+import Mission from "../components/Mission";
+import React from "react";
+import Recharge from "../components/Recharge";
+import { RiContactsLine } from "react-icons/ri";
+import StatusMission from "../components/StatusMission";
+import { TiTick } from "react-icons/ti";
+import Withdraw from "../components/Withdraw";
 import avatar from "./avatar.jpg";
 import avatar2 from "./avatar2.jpg";
 import avatar3 from "./avatar3.png";
@@ -25,28 +36,19 @@ import product4 from "./product4.jpg";
 import product5 from "./product5.jpg";
 import product6 from "./product6.jpg";
 import product7 from "./product7.jpg";
-import EditProduct from "../components/EditProduct";
-import Banner from "../components/Banner";
-import Recharge from "../components/Recharge";
-import ListOrderX from "../components/ListOrderX";
-import Withdraw from "../components/Withdraw";
-import Member from "../components/Member";
-import Level from "../components/Level";
-import Bank from "../components/Bank";
-import Mission from "../components/Mission";
-import StatusMission from "../components/StatusMission";
+import RateMission from "../components/Rate";
 
-export const gridOrderImage = props => (
+export const gridOrderImage = (props) => (
   <div>
     <img
-      className="rounded-sm h-20 md:ml-3"
+      className="h-20 rounded-sm md:ml-3"
       src={props.image}
       alt="order-item"
     />
   </div>
 );
 
-export const gridOrderImage2 = props => (
+export const gridOrderImage2 = (props) => (
   <div>
     <img
       className="w-[142px] m-auto rounded-sm h-20"
@@ -56,7 +58,7 @@ export const gridOrderImage2 = props => (
   </div>
 );
 
-export const gridOrderStatus = props => (
+export const gridOrderStatus = (props) => (
   <button
     type="button"
     style={{
@@ -78,7 +80,7 @@ export const gridOrderStatus = props => (
   </button>
 );
 
-export const gridOrderStatus2 = props => {
+export const gridOrderStatus2 = (props) => {
   return (
     <button
       type="button"
@@ -98,7 +100,7 @@ export const gridOrderStatus2 = props => {
   );
 };
 
-export const userStatus = props => {
+export const userStatus = (props) => {
   return (
     <button
       type="button"
@@ -126,10 +128,10 @@ export const kanbanGrid = [
 
   { headerText: "Done", keyField: "Close", allowToggle: true },
 ];
-const gridEmployeeProfile = props => (
+const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
     <img
-      className="rounded-full w-10 h-10"
+      className="w-10 h-10 rounded-full"
       src={props.EmployeeImage}
       alt="employee"
     />
@@ -137,7 +139,7 @@ const gridEmployeeProfile = props => (
   </div>
 );
 
-const gridEmployeeCountry = props => (
+const gridEmployeeCountry = (props) => (
   <div className="flex items-center justify-center gap-2">
     <GrLocation />
     <span>{props.Country}</span>
@@ -151,10 +153,10 @@ export const EditorData = () => (
     </h3>
   </div>
 );
-const customerGridImage = props => (
-  <div className="image flex gap-4">
+const customerGridImage = (props) => (
+  <div className="flex gap-4 image">
     <img
-      className="rounded-full w-10 h-10"
+      className="w-10 h-10 rounded-full"
       src={props.CustomerImage}
       alt="employee"
     />
@@ -165,11 +167,11 @@ const customerGridImage = props => (
   </div>
 );
 
-const customerGridStatus = props => (
-  <div className="flex gap-2 justify-center items-center text-gray-700 capitalize">
+const customerGridStatus = (props) => (
+  <div className="flex items-center justify-center gap-2 text-gray-700 capitalize">
     <p
       style={{ background: props.StatusBg }}
-      className="rounded-full h-3 w-3"
+      className="w-3 h-3 rounded-full"
     />
     <p>{props.Status}</p>
   </div>
@@ -901,16 +903,17 @@ export const userProfileData = [
   },
 ];
 
-export const ActiveMission = props => <EditProduct data={props} />;
-export const ActiveRecharge = props => <Recharge data={props} />;
-export const AcctionOrderX = props => <ListOrderX data={props} />;
-export const ActiveWithdraw = props => <Withdraw data={props} />;
-export const ActiveMember = props => <Member data={props} />;
-export const ActiveBanner = props => <Banner data={props} />;
-export const ActiveLevel = props => <Level data={props} />;
-export const ActiveBank = props => <Bank data={props} />;
-export const ActiveTask = props => <Mission data={props} />;
-export const StatusTask = props => <StatusMission data={props} />;
+export const ActiveMission = (props) => <EditProduct data={props} />;
+export const ActiveRecharge = (props) => <Recharge data={props} />;
+export const AcctionOrderX = (props) => <ListOrderX data={props} />;
+export const ActiveWithdraw = (props) => <Withdraw data={props} />;
+export const ActiveMember = (props) => <Member data={props} />;
+export const ActiveBanner = (props) => <Banner data={props} />;
+export const ActiveLevel = (props) => <Level data={props} />;
+export const ActiveBank = (props) => <Bank data={props} />;
+export const ActiveTask = (props) => <Mission data={props} />;
+export const StatusTask = (props) => <StatusMission data={props} />;
+export const RateTask = (props) => <RateMission data={props} />;
 
 export const ordersData = [
   {
@@ -1258,6 +1261,13 @@ export const gridMission = [
     width: "150",
   },
   {
+    field: "rate",
+    template: RateTask,
+    headerText: "Đánh giá",
+    width: "100",
+    textAlign: "Center",
+  },
+  {
     field: "time",
     template: ActiveTask,
     headerText: "Thao tác",
@@ -1298,6 +1308,13 @@ export const gridAllMission = [
     headerText: "Thời gian",
     textAlign: "Center",
     editType: "numericedit",
+    width: "150",
+  },
+  {
+    field: "rate",
+    headerText: "Đánh giá",
+    template: RateTask,
+    textAlign: "Center",
     width: "150",
   },
   {

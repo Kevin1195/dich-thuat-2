@@ -45,7 +45,7 @@ const AllMission = () => {
       });
   }
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-md">
+    <div className="p-2 m-2 mt-24 bg-white rounded-md md:m-10 md:p-10">
       <Header category="Danh sách đơn hàng" title="" />
       <GridComponent
         id="gridcomp"
