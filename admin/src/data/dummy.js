@@ -37,6 +37,7 @@ import product4 from "./product4.jpg";
 import product5 from "./product5.jpg";
 import product6 from "./product6.jpg";
 import product7 from "./product7.jpg";
+import DetailReview from "../components/DetailReview";
 
 export const gridOrderImage = (props) => (
   <div>
@@ -914,6 +915,7 @@ export const ActiveBank = (props) => <Bank data={props} />;
 export const ActiveTask = (props) => <Mission data={props} />;
 export const StatusTask = (props) => <StatusMission data={props} />;
 export const RateTask = (props) => <RateMission data={props} />;
+export const DetailReviewTask = (props) => <DetailReview data={props} />;
 
 export const ordersData = [
   {
@@ -1270,9 +1272,7 @@ export const gridMission = [
   {
     field: "review",
     headerText: "Nhận xét",
-    textAlign: "center",
-    overflow: "hidden",
-    textOverflow: "ellipsis",
+    template: DetailReviewTask,
     width: "250",
   },
   {
@@ -1328,11 +1328,17 @@ export const gridAllMission = [
   {
     field: "review",
     headerText: "Nhận xét",
-    textAlign: "center",
-    overflow: "hidden",
-    textOverflow: "ellipsis",
+    template: DetailReviewTask,
     width: "250",
   },
+  // {
+  //   field: "review",
+  //   headerText: "Nhận xét",
+  //   textAlign: "center",
+  //   overflow: "hidden",
+  //   textOverflow: "ellipsis",
+  //   width: "250",
+  // },
   {
     field: "status",
     headerText: "Trạng thái",
