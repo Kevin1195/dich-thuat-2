@@ -97,7 +97,7 @@ const confirmMission = async (req, res, next) => {
 
 const confirmMissionID = async (req, res, next) => {
     try {
-        let { id, id_mission, rate } = req.body;
+        let { id, id_mission, rate, review } = req.body;
         if (!rate) {
             return res.status(200).json({
                 status: 'error',
@@ -105,7 +105,7 @@ const confirmMissionID = async (req, res, next) => {
             });
         }
         let token = req.headers['x-access-token'];
-        let data = await Mission.confirmMissionID(token, id, id_mission, rate);
+        let data = await Mission.confirmMissionID(token, id, id_mission, rate, review);
         return res.status(200).json({
             status: 'ok',
             data,
