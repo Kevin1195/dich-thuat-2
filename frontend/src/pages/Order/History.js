@@ -329,7 +329,7 @@ function History({ title }) {
                                     </div>
                                     <textarea
                                         className="w-full px-3 py-1 mt-4 border rounded focus:outline-none"
-                                        maxLength={100}
+                                        maxLength={200}
                                         placeholder="Hãy chia sẻ nhận xét cho đơn hàng này bạn nhé!"
                                         value={review}
                                         rows={5}
