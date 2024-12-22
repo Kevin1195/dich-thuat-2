@@ -22,6 +22,7 @@ import Level from "../components/Level";
 import ListOrderX from "../components/ListOrderX";
 import Member from "../components/Member";
 import Mission from "../components/Mission";
+import RateMission from "../components/Rate";
 import React from "react";
 import Recharge from "../components/Recharge";
 import { RiContactsLine } from "react-icons/ri";
@@ -36,7 +37,6 @@ import product4 from "./product4.jpg";
 import product5 from "./product5.jpg";
 import product6 from "./product6.jpg";
 import product7 from "./product7.jpg";
-import RateMission from "../components/Rate";
 
 export const gridOrderImage = (props) => (
   <div>
@@ -1268,6 +1268,14 @@ export const gridMission = [
     textAlign: "Center",
   },
   {
+    field: "review",
+    headerText: "Nhận xét",
+    textAlign: "center",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    width: "250",
+  },
+  {
     field: "time",
     template: ActiveTask,
     headerText: "Thao tác",
@@ -1316,6 +1324,14 @@ export const gridAllMission = [
     template: RateTask,
     textAlign: "Center",
     width: "150",
+  },
+  {
+    field: "review",
+    headerText: "Nhận xét",
+    textAlign: "center",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    width: "250",
   },
   {
     field: "status",

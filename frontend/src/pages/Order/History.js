@@ -1,18 +1,21 @@
-import styles from './Order.module.scss';
-import classNames from 'classnames/bind';
+import 'react-toastify/dist/ReactToastify.css';
+import './History.css';
+
+import { FaRegStar, FaStar } from 'react-icons/fa6';
+import { Modal, ModalBody, ModalHeader } from 'reactstrap';
+import { ToastContainer, toast } from 'react-toastify';
+import { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+
 import Header from '../../components/Layout/components/Header';
 import SETTINGS from '../../setting.json';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { useEffect, useState } from 'react';
-import successIcon from '../../assets/images/success-icon-style.png';
-import pendingIcon from '../../assets/images/pending-icon.png';
+import classNames from 'classnames/bind';
 import ebayIconGuiHang from '../../assets/images/central-logo.png';
+import pendingIcon from '../../assets/images/pending-icon.png';
+import styles from './Order.module.scss';
+import successIcon from '../../assets/images/success-icon-style.png';
 import { useTranslation } from 'react-i18next';
-import './History.css';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { Modal, ModalBody, ModalHeader } from 'reactstrap';
-import { FaStar, FaRegStar } from 'react-icons/fa6';
+
 const axios = require('axios').default;
 const cx = classNames.bind(styles);
 function formateT(params) {
@@ -75,6 +78,7 @@ function History({ title }) {
     let [type_mission, setType] = useState(type || 'all');
     let [mission, setMission] = useState([]);
     const [star, setStar] = useState(1);
+    const [review, setReview] = useState('');
     const [isMatching, setIsMatching] = useState(false);
     const [contentMatching, setContentMatching] = useState('');
     const [missionSelected, setMissionSelected] = useState({});
@@ -116,8 +120,13 @@ function History({ title }) {
     let navigate = useNavigate();
 
     function confirmMission(id, id_mission) {
+        if (!star) {
+            return toast.error('Vui lòng đánh giá đơn hàng');
+        }
+        if (!review) {
+            return toast.error('Vui lòng cho nhận xét đơn hàng');
+        }
         setIsMatching(true);
-
         const headers = {
             'x-access-token': localStorage.getItem('auth'),
             'Access-Control-Allow-Origin': '*',
@@ -125,7 +134,7 @@ function History({ title }) {
         axios
             .post(
                 `${SETTINGS.BASE_URL}/api/webapi/mission/confirm/id`,
-                { id, id_mission, rate: star },
+                { id, id_mission, rate: star, review },
                 {
                     headers,
                 },
@@ -303,7 +312,6 @@ function History({ title }) {
                                     </div>
                                     <div className="flex items-center justify-around w-full">
                                         <span className="text-[24px] text-white">Đánh giá:</span>
-
                                         <div className="flex justify-center my-4">
                                             {Array.from({ length: 5 }, (_, index) => (
                                                 <div key={index} onClick={() => setStar(index + 1)}>
@@ -319,6 +327,13 @@ function History({ title }) {
                                             ))}
                                         </div>
                                     </div>
+                                    <textarea
+                                        className="w-full px-3 py-1 mt-4 border rounded focus:outline-none"
+                                        placeholder="Hãy chia sẻ nhận xét cho đơn hàng này bạn nhé!"
+                                        value={review}
+                                        rows={5}
+                                        onChange={(e) => setReview(e.target.value)}
+                                    />
                                     <div className="d-flex justify-content-between">
                                         <div
                                             className="flex cursor-pointer mt-4 bg-[#0dc253] w-[30%] px-4 py-2 items-center justify-center rounded-xl text-white"
@@ -420,6 +435,12 @@ function History({ title }) {
                                             ))}
                                         </div>
                                     </div>
+                                    <textarea
+                                        className="w-full px-3 py-1 mt-4 overflow-hidden border rounded focus:outline-none disabled:text-white"
+                                        value={data?.review}
+                                        rows={5}
+                                        disabled={true}
+                                    />
                                     <div className="d-flex justify-content-between">
                                         <div
                                             className="flex cursor-pointer mt-4 bg-[#0dc253] w-[30%] px-4 py-2 items-center justify-center rounded-xl text-white"
